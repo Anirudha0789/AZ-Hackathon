@@ -1,0 +1,77 @@
+
+Once in the Tokyo city Group of Ghouls i.e GoatGoat​ is being hunted by CCG
+ (police of the Tokyo city)  and now the group is hiding in the  xx-th division of the city.
+The city contains n divisions which are connected with m bidirectional roads, and Kaneki doesn’t want GoatGoat to get hunted by CCG, whenKaneki comes to know that police from zz-th division of the city is heading towards the  xx-th division to catch his group, Kaneki was in yy-th division of the city. Now “Goat” can only be saved from CCG if Kaneki arrives earlier or at the same time when CCG arrives at xx-th division.It is given that for anyone who wants to move from one division to its adjacent division of the Tokyo city it takes 1 hour.
+Touka, wife of Kaneki is away from the city and she is very nervous about all this so she started to calculate the time and predict the results. You are the only friend of Touka and you need to help her by predicting if Kaneki will be able to save the GoatGoat ? 
+If yes then print “Yes” else print “NO” without a quote.
+Input:
+Here you will be given q queries conatining division in which GoatGoat is hiding will be given for eachquery you have to predict the results
+
+Frst line of input you will be given integers nn and mm ,number of divisions in the Tokyo city 1,2,3...n1,2,3...n and number of bidirectional roads in the city respectively
+Next mm lines youwill be given an integers u,vu,v indicating that there is a road between division uu and division vv.
+On the next line you will be given integers  yy and zz  indicating division of Kaneki and division of CCG respectively.
+After this on the next line you will be given an integer  qq, number of queries.
+Next qq lines you will be provided by an integer xx , location  of  “Goat” .
+
+Output:
+For qq queries print the result of each query as “YES” if Kaneki is able to save GoatGoat from CCG or print “NO” if Kaneki is not without quotes on new line.
+Constraints
+
+1≤n,m≤1061≤n,m≤106
+1≤q≤1041≤q≤104
+1≤x,y,z≤n1≤x,y,z≤n
+
+Sample Input:
+6 6
+1 2
+1 5
+2 3
+2 4
+4 5
+4 6
+3 5
+3
+2 
+4
+6
+
+Sample Output:
+YES
+NO 
+NO
+
+EXPLANATION:
+In the above test case Kaneki is located at division 3 and CCG is located at division 5
+In 2nd query​​ ​Goat​Goat is located at division 4.
+Kaneki will require 2 hrs to reach the group 3−>2−>43−>2−>4 .
+CCG will require 1hr to reach the group 5−>45−>4.
+So Kaneki will not be able to save the ​​Goat​Goat.
+Hence Answer of 2nd query is NO.
+
+Author:
+5★kaneki99
+Editorial:
+https://discuss.codechef.com/problems/HNTRACE
+Tags:
+
+               
+                 breadth-first-search, cnst2020, easy, graphs, kaneki99
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,64 @@
+
+Apocalypse is about to happen in one day. New World will begin after one day in Winden! Jonas is the only person who knew about this. He also knew that those who stay in the bunker will live and proceed to the new world. Others will be dead after apocalypse happens.
+Jonas wants to save his crush, Martha. He wants to send a message to her. However, Adam is a villain here. If Jonas sends a plain text message, Adam will modify it. Jonas knows about Adam, so he is going to send an encrypted message using KK-strong key.
+Jonas has a string containing NN lower case English letters, which he can use to make a key. He can use any character from string at most once in any order to make a key. A key of length MM is KK-strong if for any index 0≤i<0≤i< M ,character at index ii and index (i+K)%M(i+K)%M should be the same. Jonas wants it to make it the longest possible string so that Bruteforce Attack can't easily predict it. Can you help Jonas to find the maximum length of a KK-strong key he can make?.
+Input
+The first line of the input contains an integer TT denoting the number of test cases. Then TT test cases follow.
+The first line of each test case contains integers NN and KK. Second line contains a string SS  containing NN lower case English letters.
+Output
+For each case, print the maximum length of KK-strong key you can make.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N,K≤2,0001≤N,K≤2,000
+The sum of NN for all test cases does not exceed 20002000
+
+Example Input
+3
+4 8
+bbbb
+8 4
+abcddcba
+6 1
+ababab
+20 7
+qwnfdnjppcerjbsuatrl  
+
+Example Output
+4
+8
+3
+7
+
+Explanation
+Case 1: “bbbb” is maximum possible 8- strong key.
+Case 2: “abcdabcd” is maximum possible 4- strong key.
+Case 3:  "aaa" and "bbb" are possible strings for 1-strong key.
+
+Author:
+5★karthikeya619
+Editorial:
+https://discuss.codechef.com/problems/SCMNDS
+Tags:
+
+               
+                 graphs, karthikeya619
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+19-08-2020
+Time Limit:
+0.1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

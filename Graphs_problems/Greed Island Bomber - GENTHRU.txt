@@ -1,0 +1,69 @@
+
+Genthru has observed that all the NN cities on greed island have good trade relations with each other. He deduces that the reason for this is that there exists a route between any pair of cities on greed island. Being a villain he wants to sever the trade relation between at least one pair of cities, so he decides to destroy exactly 1 road among the existing MM roads. You have to determine the exact number of roads that Genthru could destroy such that it results in there being no route between at least 1 pair of cities.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Next line contains the number of cities NN and the number of roads MM.
+Next MM lines contain 2 integers aiai and bibi indicating that there exists a road between aiai and bibi. (1≤i≤M1≤i≤M,  1≤ai≤N1≤ai≤N, 1≤bi≤N1≤bi≤N)
+
+Output:
+For each testcase, output in a single line the number of roads that Genthru could destroy.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤10001≤N≤1000
+N−1≤M≤N∗(N−1)/2N−1≤M≤N∗(N−1)/2
+A route exists between every pair of cities initially
+There can be at most 1 road between any pair of cities
+There are no roads from any city to itself
+
+Sample Input:
+2
+6 6
+1 2
+1 3
+2 3
+1 4
+4 5
+4 6
+3 3
+1 2
+1 3
+2 3
+
+Sample Output:
+3
+0
+
+EXPLANATION:
+Case 1: Genthru can destroy one of the three roads between 1-4, 4-5 or 4-6.
+Case 2: Even if Genthru destroys any of the 3 roads, a route still exists between every pair of cities.         
+
+
+Author:
+4★vallabh43
+Editorial:
+https://discuss.codechef.com/problems/GENTHRU
+Tags:
+
+               
+                 bridges, graphs, gsc2021, medium, vallabh43
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+13-01-2021
+Time Limit:
+0.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, JAVA, C, CPP14, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

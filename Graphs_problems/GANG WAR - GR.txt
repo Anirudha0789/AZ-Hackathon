@@ -1,0 +1,63 @@
+
+
+In MirzapurMirzapur,there is a gang of kaleen bhaiya.Due to some reasons the gang split into different small groups.
+Some of them joined Guddu bhaiya and some kaleen bhaiya.
+Two of the gang leaders decided that the whole GangGang will be divided in such a way that no two friends exist in the same gang.But they are not intelligent enough to do the task.So you have to do this for them.
+There were NN number of people in the gang [1,2,....N][1,2,....N] and many of them are friends to each other.You have given the friend list.You have to determine that it is possible to divide them in such a manner or not.
+
+Input:
+
+ First line will contain TT, number of testcases. Then the testcases follow.
+ Second line will contain NN,total number of people.
+Third line will contain FF,total number of friend list.
+Fourth line will contain a space separated two integers A,BA,B,means A is friend to B.
+
+Output:
+
+For each testcase, output in a single line YeSYeS if it is possible or NoNo if it is not.
+
+Constraints:
+
+ 1≤T≤1001≤T≤100
+ 2≤N≤1052≤N≤105
+ 1≤F≤1051≤F≤105
+ 1≤A,B≤N1≤A,B≤N
+
+Sample Input:
+1
+4
+2
+1 2
+3 4
+
+Sample Output:
+YeS
+
+
+Author:
+3★srthere
+Editorial:
+https://discuss.codechef.com/problems/GR
+Tags:
+
+               
+                 bipartite, encoding, graphs, srthere
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+6-02-2019
+Time Limit:
+0.5 - 0.8 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,68 @@
+
+“Do you understand what’s going on in here, TARS?”
+The way out of the tesseract is a lower dimensional puzzle which consists of kk-Squares, consisting of a k∗k∗1k∗k∗1 grid of cubies, where the solved configuration consists of six monochromatic faces. From any kk-Square configuration, there are 2k2k possible moves to transform the configuration into a new configuration.
+Each move changes the position and orientation of exactly one row or column of cubies from a
+input configuration in the following way: to move row (or column) ii of a configuration, reverse
+the order of the cubies within that row (or column), and flip the orientation of each cubie in the
+row (or column) upside-down.
+We will represent a kk-Square configuration via a length-kk array of length-kk arrays, where
+the ythyth inner array corresponds to the ythyth row of the configuration, and the xthxth element of row yy corresponds to the cubie positioned at row yy and column xx. We represent each cubie as an integer between 11 and k2k2 inclusive, where integer ii represents the cubie that exists in row y=floor(i−1/k)y=floor(i−1/k) and column x=i−ky−1x=i−ky−1 in the solved configuration. In addition, we use positive ii when the cubie in the configuration has the same orientation as in the solved configuration, and negative ii when the cubie is upside-down. For example, the two configurations shown above have the following representations:
+
+C1=((1,2,3,4),(5,6,7,8),(9,10,11,12),(13,14,15,16))C1=((1,2,3,4),(5,6,7,8),(9,10,11,12),(13,14,15,16))
+C2=((1,2,−15,4),(5,6,−11,8),(9,10,−7,12),(13,14,−3,16))C2=((1,2,−15,4),(5,6,−11,8),(9,10,−7,12),(13,14,−3,16))
+here, C2C2 = move(C1C1, ("colcol", 22))
+
+Joseph Cooper now needs your help!
+Find the shortest sequence of moves to solve the kk-Square. The input will be a kk-square configuration, and it should return a list of moves where: (1)(1) each move is of the form (s,i)(s,i) for some ss in { "rowrow","colcol"} and ii in 0,.....,k−10,.....,k−1, and (2)(2) applying the sequence of moves in order to the input configuration results in the solved configuration. If there are multiple sequences of moves always choose to apply a “colcol” move before a “rowrow” move, and between moves of the same type (“rowrow” or “colcol”) choose the move with a smaller index.
+Input format
+
+The first line contains kk, the side of the kk-square.
+The following kk lines contains kk integers, such that the ithith integer in the jthjth line aijaij  corresponds to the cubie positioned at row ii and column jj.
+
+Constraints
+
+1≤k≤101≤k≤10
+−k2≤aij≤k2−k2≤aij≤k2
+
+Output Format
+
+Print nn, the number of moves in the shortest sequence.
+In the following nn lines print the moves, where the ithith line contains a move of the form (s,i)(s,i) as a string ss followed by a space followed by integer ii.
+
+Sample Input
+2
+1 -4
+3 -2
+
+Sample Output
+1
+col 1 
+
+
+Author:
+5★shriram_c253
+Editorial:
+https://discuss.codechef.com/problems/SOPC013
+Tags:
+
+               
+                 breadth-first-search, graphs, implementation, math, sapc2019, shriram_c253
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+19-12-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

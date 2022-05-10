@@ -1,0 +1,64 @@
+
+ 
+Problem description.
+Geralt owns S horses. He wants to keep only horses that can run very fast. He decides which horses are fast by making them race against each other. If a horse comes in last, then Geralt will sell it. 
+The race course consists of N checkpoints and E roads. Geralt positions his horses at the first S checkpoints i.e., checkpoints 1 to S. The checkpoint N is chosen as the finish line. The horses need 1 unit of time to cross one road. If the horses have two or more paths to choose, then they choose the one which is shortest. The horses start the race at the same instant. When a horse reaches checkpoint N, it finishes the race.
+
+Find the total number of horses that Geralt will sell i.e., the number of horses that come in last.
+ NOTE : The roads are bidirectional.  
+Input
+
+ The first line of the input consists of S (the number of horses), N (the number of checkpoints) and E (the number of roads) 
+ Each of the next  E lines contains a and b, indicating that there is a road between checkpoints a and b 
+
+Output
+Print a single integer, the number horses that come in last. 
+
+Constraints
+
+ 1 ≤  S <  N ≤ 300000 
+ 1 ≤  E ≤ 300000 
+ 1 ≤  a , b ≤ N 
+
+Example
+Input:
+3 5 4
+1 5
+2 4
+3 4
+5 4
+
+Output:
+2
+
+Explanation
+There are 3 horses, each starting at checkpoint 1, 2 and 3 respectively. 
+Checkpoint 5 is the finish line. The horse starting at checkpoint 1 finishes the race first, in 1 unit of time. The horses at 2 and 3 come in last and finish the race at the same instant. Hence, Geralt will sell 2 horses.
+
+Author:
+5★akshayvenkat97
+Editorial:
+https://discuss.codechef.com/problems/HRACE
+Tags:
+
+               
+                 akshayvenkat97, breadth-first-search, easy-medium, graphs, popc2018
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+10-01-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

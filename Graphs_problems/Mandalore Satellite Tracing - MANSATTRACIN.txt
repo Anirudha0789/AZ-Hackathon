@@ -1,0 +1,67 @@
+
+Foundling Shreyas is an Imperial double agent. He wants to effectively end life on Mandalore, so he set off a huge bomb. But Shreyas is incompetent, so the emperor tasked Commander Keyur to confirm that all life on Mandalore is destroyed. Keyur set up a satellite to study the terrain and detect any signs of life on the surface of Mandalore.
+The satellite has located the saplings on the surface of Mandalore. Since transmission of signals is expensive, the satellite is programmed to send a bare minimum of data that can be used to understand the terrain.
+Input Format
+
+First line contains 2 integers NN, MM
+NN lines follow
+Each of the NN lines contains a string SS and two integers aa, bb.
+MM lines follow
+Each of the MM lines contains two integers uu, vv.
+
+Output Format
+Output a single non-negative integer.
+Constraints
+
+2≤N≤1052≤N≤105
+1≤M≤1051≤M≤105
+1≤|S|≤1041≤|S|≤104
+0≤|a|,|b|≤1090≤|a|,|b|≤109
+1≤u,v≤N1≤u,v≤N
+Sum of |Si| over all strings is less than 10^5
+                        Sample Input 1
+                        
+
+4 5
+Behot 0 3
+Varos 1 2
+Galek 2 1
+Vormur 3 0
+1 2
+1 3
+1 4
+2 4
+3 4
+
+                        Sample Output 1
+                        
+
+8
+
+Author:
+5★keyurchd_11
+Editorial:
+https://discuss.codechef.com/problems/MANSATTRACIN
+Tags:
+
+               
+                 graphs, keyurchd_11, minimum-spanning-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+16-03-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit
