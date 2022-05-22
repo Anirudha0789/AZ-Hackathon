@@ -1,0 +1,25 @@
+*{
+    margin : 0;
+    padding : 0;
+    background-color: aquamarine;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+label{
+    margin: 2px;
+}

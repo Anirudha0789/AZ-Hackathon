@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+
+    <div>
+        <h1>Search Engine</h1>
+    </div>
+    <div>
+        <h3>
+           Welcome to the profile of <%= person %>
+        </h3>
+        <h3>
+           Age : <%= data.age %>
+        </h3>
+        <h3>
+           Job : <%= data.job %>
+        </h3>
+        <h3>
+           Hobbies : <%= data.job %>
+        </h3>
+        <ul>
+            <% data.hobbies.forEach((item)=>{ %>
+                <li><%= item %></li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>

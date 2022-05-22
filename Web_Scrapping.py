@@ -77,7 +77,6 @@ import os
 import re
 
 from lib2to3.pgen2 import driver
-from webbrowser import Chrome
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
@@ -85,7 +84,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-driver.get("https://www.codechef.com/tags/problems/array")
+driver.get("https://www.codechef.com/tags/problems/prefix-sum")
 
 time.sleep(5)
 
@@ -109,22 +108,30 @@ for ques in all_ques:
     urls.append("https://www.codechef.com"+ques['href'])
     title.append(ques.text)
 
-with open("problem_urls_array.txt", "w+") as f:
+# with open("problem_urls.txt", "w+") as f:
+#     f.write('\n'.join(urls))
+
+# with open("problem_titles.txt", "w+") as f:
+#     f.write('\n'.join(title))
+
+with open("problem_urls.txt", "a+") as f:
     f.write('\n'.join(urls))
 
-with open("problem_titles_array.txt", "w+") as f:
+with open("problem_titles.txt", "a+") as f:
     f.write('\n'.join(title))
+
 
 
 # Creating New Folder
 
-new_folder = r'Array_problems'
+new_folder = r'Problems'
 if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 
-count = 0
+count = 1868
 for url in urls:
     driver.get(url)
+    count+=1
     time.sleep(5)
     html = driver.page_source
     soup = BeautifulSoup(html, "html.parser")
@@ -132,7 +139,7 @@ for url in urls:
     problem_text = soup.find("div", {"class" : "problem-statement"}).get_text()
 
     # File name with the title.
-    with open("Array_problems/"+title[count]+".txt", "w+", encoding="utf-8") as f:
+    with open("Problems/problem-"+str(count)+".txt", "w+", encoding="utf-8") as f:
         txt = problem_text
         # txt = re.sub(r'\n\s*\n', '\n', txt)
         # Adds two blanks between all paragraphs
@@ -140,4 +147,3 @@ for url in urls:
         # Removes the blank lines from the EOF
         txt = re.sub(r'\n*\Z', '', txt)
         f.write(txt)
-    count+=1
