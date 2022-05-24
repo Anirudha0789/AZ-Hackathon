@@ -87,14 +87,14 @@ def normalize(words):
     words = remove_non_ascii(words)
     words = to_lowercase(words)
     words = remove_punctuation(words)
-    # words = replace_numbers(words)
+    words = replace_numbers(words)
     words = remove_stopwords(words)
     return words
 
 def preprocess(sample):
     sample = remove_URL(sample)
     sample = replace_contractions(sample)
-    sample = remove_numbers(sample)
+    # sample = remove_numbers(sample)
     # Tokenize
     words = nltk.word_tokenize(sample)
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     count = 0
     while(count < 1944):
         count+=1
-        file1 = open('Keywords/Keyword-'+str(count)+'.txt', 'r', encoding='utf-8')
+        file1 = open('Problems/problem-'+str(count)+'.txt', 'r', encoding='utf-8')
         sample = file1.read()            
         sample = remove_URL(sample)
         sample = replace_contractions(sample)
@@ -146,4 +146,5 @@ if __name__ == "__main__":
         # All keywords into single txt
         fo1 = open('Keyword.txt', 'a', encoding='utf-8')
         for element in words:
-            fo1.write(element+"\n")
+            # fo1.write(element)
+            fo1.write(element+" ")
