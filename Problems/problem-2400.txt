@@ -1,0 +1,71 @@
+
+Chef Jay have recently qualified for INOI, and he can't keep his excitment with himself and share this news with 'K' of his friends. One day Scrolling on Instagram Jay find a quote written : "The more the people knows, the more is the chances of FAILURE.", Now reading this he is scared and fears what if it will become true. However, he is well prepared for INOI even though he wants to find the number of peoples who had by now known the news. Jay knows his friends and his friends friend (and so on) very well, he knows that his friends will share this news to every friend who has friendship strength ≤ 'S'. You are given the graph representing the friendship and the friendship strength, find the number of peoples who knows this news. The graph can also be disconnected.
+_________________________________________
+ 
+Input
+ 
+
+1st line:N M (N = No of total friends, M = total no of friendship bonds)
+Next M Lines contains 3 integers. a,b,c representing a and b are both friends with friendship strength of c.
+A blank line follows
+K S (K = no of friends with whom Jay shared the news, S = mentioned above)
+Next K space separated integers representing the friends whom Jay shared the news. k1,k2.....kk.
+
+_________________________________________
+Output
+
+Single Integer representing the number of friends who by now knows a news.
+
+_________________________________________
+Constraints
+
+1≤N≤ 100,000 M≤min(123456, N(N-1)/2), K≤ N, S≤ 109
+1≤a,b≤N, 1≤c≤109
+Ki ≤ N
+
+_________________________________________
+Scoring
+
+10 pts: N≤100
+20 pts: N≤1000
+70 pts: Original Constaints
+
+_________________________________________
+ 
+Example
+ 
+Input
+5 51 2 61 3 32 3 23 4 63 5 5
+2 51 5
+Output
+4
+
+Author(s):
+
+3★jvjplus
+
+Editorial:
+https://discuss.codechef.com/problems/JVPHOBIA
+Tags:
+
+               
+                 akashbhalotia, depth-first-search, easy, ico, icop1904, jvjplus
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+10-01-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, PYPY, kotlin, FS
+
+Submit

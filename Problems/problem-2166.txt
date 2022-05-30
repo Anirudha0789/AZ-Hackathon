@@ -1,0 +1,79 @@
+
+Since The Price of Bitcoins is rising day by day.
+The team of four buisness-man (Yash,Tejas,Niranjan,sujal)(Yash,Tejas,Niranjan,sujal) who have purchased some bitcoins in 2009 decided to sell them. Because they think it's the right time to sell their bitcoins.
+The problem here is that they have forget the password for their bitcoin account.
+But they know the algorithm to find the password.
+The algorithm is as follow 
+i) Each business man will chose two numbers but the condition here is that the 2nd number 
+   should always be less or equal to 1st number.
+ii) Now they have to subtract their 2nd number from 1st till they get the smallest possible non- 
+   negative number. (egeg : - suppose the 1st number is 7 and 2nd number is 2 then we will subtract 2nd number i.e 2 for 3 three times and we will left with 1 which is smallest non-negative number).
+iii) Now after each business man find's their smallest non-negative number. All of them will add 
+     their smallest non-negative number.
+iv) Now if their addition is a composite number then they successfully got the access else not.
+So you have to help them to get the access to their account. If they get happy with your work 
+so maybe they will give you some of their bitcoins.
+but the reward is secondary our first goal is to help them to get access their account.
+So You are given 2 array of size N=4.
+1st array will contain the 1st number of all business man.
+2nd array will contain the 2nd number of all business man.
+you have to subtract the iith value of 1st array with iith value of 2nd array. till you get the smallest non-negative number.
+Apply the same thing on whole array.
+Now ADD all the smallet non-negative numbers and check if it is composite number or not.
+If the number is composite Print "Access Granted" else print "Access Denied".
+(NOTE : If the value of addition is zero or one print "Access Denied").
+(NOTE : All the answers are case sensitive).
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of Two array of size N=4.
+First array A1,B1,C1,D1A1,B1,C1,D1.
+Second array A2,B2,C2,D2A2,B2,C2,D2.
+
+Output:
+For each testcase, output in a single line answer i.e "Access Granted"   OROR   "Access Denied".
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤A1,B1,C1,D1≤1091≤A1,B1,C1,D1≤109
+1≤A2,B2,C2,D2≤1091≤A2,B2,C2,D2≤109
+
+Sample Input:
+1
+10 20 30 40
+5 10 20 30
+Sample Output:
+Access Granted
+EXPLANATION:
+The minimum non-negative number for 1st two business man is equal to "0" and for 3rd business man it's 10 and for 4th also it's 10. The sum of all is equal to 20.
+20 is composite number so the answer is "Access Granted".
+
+Author(s):
+
+4★abhi_3568
+
+Editorial:
+https://discuss.codechef.com/problems/TYNS007
+Tags:
+
+               
+                 abhi_3568, c-plus-plus, easy, help
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+26-03-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

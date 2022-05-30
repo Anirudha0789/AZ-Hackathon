@@ -1,0 +1,130 @@
+
+With the helpful alien Chitti by your side, you finally have hope to repair the glitching time machine. As you have experienced before, the machine takes you to certain unpredictable timelines with every jump. 
+Prof Paradox tells you that the machine can jump to NN different timelines and gives you N−1N−1 pairs of timelines which can be reached from one another in a single jump. He also tells you that every timeline can be reached by every other timeline in a finite number of jumps. Each timeline has a paradox value of AiAi. Chitti offers to help you. But, for that you need to gather some parts to construct a new time machine. 
+Chitti first gives you a binary variable SS, that denotes if the time machine is stable (S=0S=0) or unstable (S=1S=1). 
+If S=0S=0, no new parts are required to fix the machine and hence you can proceed with the same map of timelines.
+If S=1S=1, we require some parts to construct a new time machine and generate a new map. For this, the existing time machine generates a random permutation PP of NN timelines.
+Guidelines to design the map:
+For any valid ii, (1<=i<=n)(1<=i<=n), from Pi−thPi−th timeline, you have to visit all the reachable timelines, collect some parts and come back. Since, backward jumps form a rip in the fabric of time, all the adjacent timelines of PiPi get disconnected in such a way that you can jump to the adjacent timelines from PiPi but can’t return.
+Now you have the parts, but the rip in time is permanent. So, you need a new map to navigate your way home. Chitti tells you that you have to follow the given rules to design your new map:
+
+Every node should be able to reach any node in its subtree using a finite number of forward jumps.
+Every node should not be able to reach any node that is not present in its subtree using forward jumps.       
+However if S=0S=0 , the old design is retained.  
+
+Now to make the time machine work, Chitti has QQ queries. For each query, he gives you two nodes uu and vv, and asks for XORXOR of the paradox values of all the timelines except the ones that lie in the path between uu and vv [Inclusive]. 
+Can you give Chitti the necessary information to repair your time machine and finally return home?
+Note:Note:
+
+If SS = 11, the initial timeline in the new map of timelines is to be decided by you.
+If SS = 00, consider the initial timeline to be 11.
+Once the new map is constructed completely , You can assume it to be Undirectional, i.e; for 
+every adjacent pair of timelines in the map, both forward and backward jumps are possible.
+The Queries have to be performed over the new map.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+First line of each testcase contains of a single line of input, two integers N,QN,Q.
+Second line of each testcase contains NN spaced integers denoting the paradox value of each 
+Timeline.
+Next you have N−1N−1 lines containing a pair of integers denoting the Timelines for which both 
+forward and backward jumps are possible.
+Next line contains a integer SS  which can take only 00 or 11.
+Next line of contains a permutation of 11 to NN only if S=1S=1 else thsi line is omitted.
+Then you have QQ lines containing a pair of integers denoting the Timelines for which you 
+have to calculate the answers.
+
+Output:
+For each Query, output in a single line XORXOR of paradox values of all Timelines except the ones that lie in the path of  uu and vv inclusive in the new design. .
+Constraints
+
+1≤T≤2001≤T≤200
+2≤N≤1052≤N≤105
+1≤Q≤1051≤Q≤105
+1≤A[i]≤1091≤A[i]≤109
+S=0S=0 or S=1S=1
+
+Subtask 1: (10 pts)
+
+1≤T≤2001≤T≤200
+2≤N≤502≤N≤50
+1≤Q≤501≤Q≤50
+1≤A[i]≤1001≤A[i]≤100
+S=0S=0
+
+Subtask 2: (20 pts)
+
+1≤T≤501≤T≤50
+2≤N≤1052≤N≤105
+1≤Q≤1051≤Q≤105
+1≤A[i]≤1061≤A[i]≤106
+S=0S=0
+
+Subtask 3: (20 pts)
+
+1≤T≤1001≤T≤100
+2≤N≤10002≤N≤1000
+1≤Q≤10001≤Q≤1000
+1≤A[i]≤1061≤A[i]≤106
+
+Subtask 4: (50 pts)
+
+Original Constraints
+
+Sample Input:
+1
+10 4
+6 7 8 3 10 9 5 7 1 7
+4 10
+2 10
+3 7
+6 3 
+9 6
+7 8
+3 10
+9 5
+7 1
+1
+4 8 9 5 2 10 7 6 3 1
+4 4
+2 10
+6 10
+3 3
+
+Sample Output:
+14
+13
+6
+5
+
+
+Author(s):
+
+3★dharsan_r
+
+Editorial:
+https://discuss.codechef.com/problems/TMTR8
+Tags:
+
+               
+                 depth-first-search, dharsan_r, heli2021, lowest-common-ancestor, square-root-decomposition, union-find, xor
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+30-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

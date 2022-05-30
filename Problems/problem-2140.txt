@@ -1,0 +1,75 @@
+
+Given a long integer xx, count the number of values of aa satisfying the following conditions:
+
+a⊕x>xa⊕x>x
+0<a<x0<a<x 
+
+where aa and xx are long integers and ⊕⊕ is the bitwise XOR operator.
+You are given qq queries, and each query is in the form of a long integer denoting xx. For each query, print the total number of values of aa satisfying the conditions above on a new line.
+Input:
+
+The first line contains an integer qq, where qq is the number of queries. 
+Each of the next qq lines contains a long integer describing the value of xx for a query.
+
+Output:
+For each query, print the number of values of aa satisfying the given conditions on a new line.
+Constraints
+
+1≤q≤1051≤q≤105
+1≤x≤101≤x≤10 x 109109
+
+Subtasks
+For 50% of the maximum score:   
+
+1≤q≤1031≤q≤103
+1≤x≤1041≤x≤104 
+
+Sample Input:
+2
+2
+10
+Sample Output:
+1
+5
+EXPLANATION:
+We perform the following q=2q=2 queries:   
+
+For x=2x=2 the only value of aa satisfying 0<a<x0<a<x is 11. This also satisfies our other condition, as 1⊕2=31⊕2=3 and 3>x3>x. Because we have one valid aa and there are no more values to check, we print 11 on a new line.
+For x=10x=10, the following values of aa satisfy our conditions:
+1 ⊕ 10 = 11
+4 ⊕ 10 = 14
+5 ⊕ 10 = 15
+6 ⊕ 10 = 12
+7 ⊕ 10 = 13
+There are 55 valid values of aa.
+
+
+Author(s):
+
+3★ayush163
+
+Editorial:
+https://discuss.codechef.com/problems/GTXOR
+Tags:
+
+               
+                 ayush163, bitwise-operation, medium
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+31-03-2019
+Time Limit:
+0.02 - 1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

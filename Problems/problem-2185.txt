@@ -1,0 +1,44 @@
+
+As the world continues its chaotic descent into Mayhem, we are the Mayday!
+Thank you for being a part of big T.
+
+Now, print the word that occurs most in the image above.
+Input:
+If Hello, World! Is the word that occurs the most,then the input will be:
+
+++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<+
++.------------.>++++++[<+++++++++>-]<+.<.+++.------.--------.>>>++++[<++++++++>-
+  ]<+.
+
+Output:
+Hello, World!
+
+Author(s):
+
+1★varghesebabu
+
+Editorial:
+https://discuss.codechef.com/problems/CLUEC001
+Tags:
+
+               
+                 help, varghesebabu
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+23-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+BF
+
+Submit

@@ -1,0 +1,76 @@
+
+Bob just learned about bitwise operators. Since Alice is an expert, she decided to play a game, she will give a number xx to Bob and will ask some questions:
+There will be 4 different kinds of queries:-
+
+Alice gives an integer ii and Bob has to report the status of the ithith bit in xx, the answer is "ON""ON" if it is on else "OFF""OFF".
+Alice gives an integer ii and Bob has to turn on the ithith bit in xx.
+Alice gives an integer ii and Bob has to turn off the ithith bit in xx.
+Alice gives two integers pp and qq and in the binary representation of xx Bob has to swap the pthpth and the qthqth bits.
+
+The value of xx changes after any update operation.
+positions ii, pp, and qq are always counted from the right or from the least significant bit.
+If anyone of ii, pp, or qq is greater than the number of bits in the binary representation of xx, consider 00 at that position.
+Input:
+
+First-line will contain TT, the number of test cases. Then the test cases follow. 
+the first line of each test case contains two space-separated integers x,Qx,Q.
+2Q2Q lines follow.
+first line is an integer, the query type.
+for each query of type 1 to 3, there will be the integer ii
+for the query of type 4, there will be two space-separated integers, the integers p,qp,q
+
+Output:
+For the queries of the first kind, print "ON""ON" or "OFF""OFF".
+Constraints
+
+1≤T≤1031≤T≤103
+1≤x≤1091≤x≤109
+1≤Q≤1031≤Q≤103
+1≤i,p,q≤301≤i,p,q≤30
+
+Sample Input
+    1
+    2 2
+    2 
+    1
+    1 
+    1
+
+Sample Output:
+    ON
+
+EXPLANATION:
+the binary representation of 2 is 10
+for query 1, we just have to update x to 11 (or 3 in decimal).
+for the next query, x is now 3 or 11 in binary so the answer is ON.
+
+
+Author(s):
+
+4★skrstv123
+
+Editorial:
+https://discuss.codechef.com/problems/ENCDEC03
+Tags:
+
+               
+                 bit-manipulation, bitwise-operation, easy, ende2020, skrstv123
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

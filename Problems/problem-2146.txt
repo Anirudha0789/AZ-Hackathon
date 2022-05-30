@@ -1,0 +1,55 @@
+
+You are given a string of characters and you have to find the Sum of the indexes of each character (according to lexicographical order). check if the sum of all indexes is even or odd.
+If the sum of all index values is even then print "YES" (without quotes). else print "NO"(without quotes).
+NOTE:NOTE: The string contains only lowercase characters.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of string SS.
+
+Output:
+For each testcase, output in a single line answer i.e "YES" or "NO" (without quotes).
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤stringsize≤10001≤stringsize≤1000
+
+Sample Input:
+1
+abhishek
+
+Sample Output:
+NO 
+
+Explaniation:
+Testcase1:Testcase1: The sum of all index values for the given string is 63 (1 + 2 + 8 + 9 + 19 + 8 + 5 + 11) so the answer is NONO.
+
+Author(s):
+
+4★abhi_3568
+
+Editorial:
+https://discuss.codechef.com/problems/INDX12
+Tags:
+
+               
+                 abhi_3568, easy, help
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+6-05-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

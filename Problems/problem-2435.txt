@@ -1,0 +1,82 @@
+
+
+There are N departments and M roads in VSSUT, Burla. Each road has an ID associated with it. You are to process the following queries:-
+In the ith query you are given two numbers ui and vi .
+Find the number of distinct IDs that satisfy the following condition: the roads of that ID connect vertex ui and vi either directly or indirectly.
+
+Input
+The first line of the input contains two space-separated integers n and m (2 ≤ n ≤ 100, 1 ≤ m ≤ 100), denoting the number of the departments and the number of the roads, respectively.
+The next m lines contain three space-separated  integers ai, bi (1 ≤ ai < bi ≤ n) and ci (1 ≤ ci ≤ m),  where ai is the source node, bi is the destination node and ci is the ID. Note that there can be multiple roads between two departments. However, there are no multiple roads of the same id between two departments, that is, if i ≠ j, (ai, bi, ci) ≠ (aj, bj, cj).
+The next line contains an integer q (1 ≤ q ≤ 100), denoting the number of the queries.
+Then follows q lines, containing two space-separated integers ui and vi (1 ≤ ui, vi ≤ n). It is guaranteed that ui ≠ vi.
+Output
+For each query, print the answer in a separate line.
+
+Examples
+Input
+8 9
+2 8 6
+5 5 1
+4 1 3
+6 7 6
+6 6 5
+4 3 6
+1 7 4
+1 5 3
+5 7 6
+2
+5 8
+5 7
+Output
+0
+1
+Input
+7 8
+7 1 4
+5 3 5
+2 4 6
+5 6 7
+3 1 7
+1 3 1
+3 5 3
+1 4 3
+2
+1 7
+1 3
+Output
+1
+2
+Explanation
+Case 1
+Query 1: There is no path connecting 5 to 8 with all the edges of same ID. So, the answer is 0.
+Query 2: There is a path connecting 5 to 7 with the ID 6. So, the answer is 1.
+
+Author(s):
+
+1★bigo_admin
+
+Editorial:
+https://discuss.codechef.com/problems/COLGQU
+Tags:
+
+               
+                 bigo_admin, depth-first-search, easy, union-find
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+11-01-2017
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,208 +1,128 @@
-# # import required module
-# from sklearn.feature_extraction.text import TfidfVectorizer
+import math
+import string
+import re
 
-# # merge documents into single corpus
-# corpus = []
-# count = 0
-# while(count < 1944):
-#   count+=1
-#   fo1 = open('Keywords/keyword-'+str(count)+'.txt', encoding='utf-8')
-#   docs = fo1.read()
-#   corpus.append(docs)
-#   # corpus.insert(1, docs)
-  
-# # create object
-# tfidf = TfidfVectorizer()
-  
-# # get tf-df values
-# result = tfidf.fit_transform(corpus)
-  
-# # get idf values
-# # fo1 = open('idf.txt', 'w+', encoding='utf-8')
-# # for ele1, ele2 in zip(tfidf.get_feature_names_out(), tfidf.idf_):
-# #     words = (ele1, ':', ele2)
-# #     fo1.write(str(words)+'\n')
+from gensim.parsing.preprocessing import remove_stopwords
+
+keywords = []
+sentence = []
+
+# f2 = open("./sentence.txt", 'a+')
+for cnt in range(0, 2469):
+    f1 = open('Problems/problem-'+str(cnt+1)+'.txt', encoding='utf-8')
+    docs = str(f1.read())
+
+    # filtered_sentence = remove_stopwords(docs)
+    docs = docs.replace("\\n", " ")
+
+    documents_clean = []
+    # for :
+    # Remove Unicode
+    document_test = re.sub(r'[^\x00-\x7F]+', ' ', docs)
+
+    # Remove Mentions
+    document_test = re.sub(r'@\w+', ' ', document_test)
+
+    # Lowercase the document
+    document_test = document_test.lower()
+
+    # Remove punctuations
+    document_test = re.sub(r'[%s]' % re.escape(string.punctuation), ' ', document_test)
+
+    # Lowercase the numbers
+    document_test = re.sub(r'[0-9]', ' ', document_test)
+
+    # Remove the doubled space
+    document_test = re.sub(r'\s{2,}', ' ', document_test)
+    documents_clean.append(document_test)
+
+    filtered_sentence = remove_stopwords(documents_clean[0])
+
+    filtered_sentence = sorted(filtered_sentence.split(" "))
+
+    sentence.append(filtered_sentence)
     
-  
-# # get indexing
-# # fo2 = open('word_indexes.txt', 'w+', encoding='utf-8')
-# # # fo2.write('Word indexes:\n')
-# # fo2.write(str(tfidf.vocabulary_))
-  
+    # writing in the sentence.txt file
+    # f2.write(str(filtered_sentence)+'\n')
 
-# # display tf-idf values
-# fo3 = open('tf-idf.txt', 'w+', encoding='utf-8')
-# # fo3.write('tf-idf value:\n')
-# fo3.write(str(result)+'\n')
-# # print(result)
-  
-# # # in matrix form
-# # fo4 = open('tf-idf-matrix.txt', 'a', encoding='utf-8')
-# # fo4.write('\ntf-idf values in matrix form:')
-# # fo4.write((str(result.toarray())))
+    filtered_sentence = set(filtered_sentence)
 
-# ////////////////////////////////////////////////////////////////////////////////
+    for i in filtered_sentence:
+        keywords.append(i)
 
 
-# # import required module
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# import pandas as pd
+keywords = sorted(set(keywords))
 
-# # merge documents into single corpus
-# corpus = []
-# count = 0
-# while(count < 1944):
-#   count+=1
-#   fo1 = open('Keywords/keyword-'+str(count)+'.txt', encoding='utf-8')
-#   docs = fo1.read()
-#   corpus.append(docs)
-
-# vectorizer = TfidfVectorizer()
-# vectors = vectorizer.fit_transform(corpus)
-# feature_names = vectorizer.get_feature_names_out()
-# dense = vectors.todense()
-# denselist = dense.tolist()
-# df = pd.DataFrame(denselist, columns=feature_names)
-
-# # display tf-idf values
-# fo3 = open('tf-idf.txt', 'a+', encoding='utf-8')
-# # fo3.write('tf-idf value:\n')
-# fo3.write('\n'+str(df))
-
-# //////////////////////////////////////////////////////////////////////
-
-# from opcode import opname
-# from pydoc import doc
-# import string
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# import pandas as pd
-# import numpy as np
-# import re
-# import sys
-# from textblob import TextBlob
-# from nltk.stem.porter import PorterStemmer
-# from nltk.stem import LancasterStemmer
-
-# def get_similar_articles(q, df):
-#   print("query:", q)
-#   print("cosine similarity: ")
-
-#   # Convert the query become a vector
-#   q = [q]
-#   q_vec = vectorizer.transform(q).toarray().reshape(df.shape[0],)
-#   sim = {}
-
-#   # Calculate the similarity
-#   for i in range(10):
-#     sim[i] = np.dot(df.loc[:, i].values, q_vec) / np.linalg.norm(df.loc[:, i]) * np.linalg.norm(q_vec)
-  
-#   # Sort the values 
-#   sim_sorted = sorted(sim.items(), key=lambda x: x[1], reverse=True)
-
-#   # Print the articles and their similarity values
-#   file1 = open('result.txt', 'w+', encoding='utf-8')
-#   for k, v in sim_sorted:
-#     if v != 0.0:
-#       file1.write("Nilai Similaritas: ")
-#       file1.write(str(v)+'\n'+ '\n')
-#       file1.write("Title: " + titles[k] + "\t\t\t\t\t")
-#       file1.write("link: " + urls[k] +'\n'+ '\n')
-#       file1.write(corpus[k] + '\n' + '\n')
-
-# # Merging all the problems
-# corpus = []
-# count = 0
-# while(count < 1944):
-#   count+=1
-#   fo1 = open('Problems/problem-'+str(count)+'.txt', encoding='utf-8')
-#   docs = fo1.read()
-#   corpus.append(docs)
-
-# # Merging all the titles
-# titles = []
-# fo1_titles = open('problem_titles.txt', encoding='utf-8')
-# doc_titles = fo1_titles.read()
-# doc_titles = doc_titles.split('\n')
-# for title in doc_titles:
-#   titles.append(title)
-#   corpus.append(title)
-
-# # Merging all the urls
-# urls = []
-# fo1_urls = open('Problem_urls.txt', encoding='utf-8')
-# doc_urls = fo1_urls.read()
-# doc_urls = doc_urls.split('\n')
-# for url in doc_urls:
-#   urls.append(url)
-#   corpus.append(url)
-
-# # folwe = open('corpus.txt', 'a', encoding='utf-8')
-# # folwe.write(str(corpus) +'\n\n\n\n')
-
-# # Text processing
-# documents_clean = []
-# for d in corpus:
-#     # Remove Unicode
-#     document_test = re.sub(r'[^\x00-\x7F]+', ' ', d)
-
-#     # Remove Mentions
-#     document_test = re.sub(r'@\w+', '', document_test)
-
-#     # Lowercase the document
-#     document_test = document_test.lower()
-
-#     # Remove punctuations
-#     document_test = re.sub(r'[%s]' % re.escape(string.punctuation), ' ', document_test)
-    
-#     # Lowercase the numbers
-#     document_test = re.sub(r'[0-9]', '', document_test)
-
-#     #  replace \n with space
-#     document_test = re.sub("'\r\n'", r"' '", document_test)
-
-#     # Remove the doubled space
-#     document_test = re.sub(r'\s{2,}', ' ', document_test)
-#     documents_clean.append(document_test)
-
-# folwe = open('corpus.txt', 'a', encoding='utf-8')
-# folwe.write(str(documents_clean) +'\n\n\n\n')
-
-# # Instantiate a TfidfVectorizer object
-# vectorizer = TfidfVectorizer()
-
-# # It fits the data and transform it as a vector
-# X = vectorizer.fit_transform(documents_clean)
-
-# # Convert the X as transposed matrix
-# X = X.T.toarray()
-
-# # Create a DataFrame and set the vocabulary as the index
-# df = pd.DataFrame(X, index=vectorizer.get_feature_names_out())
-
-# # # display tf-idf values
-# # fo3 = open('tf-idf.txt', 'w+', encoding='utf-8')
-# # fo3.write(str(df)+'\n')
+# f3 = open("Keywords.txt", 'w+', encoding='utf-8')
+# f3.write('\n'.join(keywords))
 
 
-# # Add The Query
-# queryString = 'sudoku'
-# queryString = queryString.lower()
-# queryString = TextBlob(queryString)
-# queryString = str(queryString.correct())
+# Calculating TF and writing in the tf.txt
+TF = []
+# f4 = open('./tf.txt', 'a+', encoding='utf-8')
+for i in range(len(sentence)):
+    no_of_keywords_local = len(sentence[i])
+    # tf_local = []
+    for j in range(len(keywords)):
+        cnt = (sentence[i].count(keywords[j]))
+        if cnt == 0:
+            continue
+        tf_local = []
+        tf_local.append(i)
+        tf_local.append(j)
+        tf_local.append(cnt/no_of_keywords_local)
+        TF.append(tf_local)
+        # f4.write(str(tf_local) + '\n')
 
-# print(queryString)
+
+# Calculating IDF and writing in the idf.txt
+IDF = []
+
+N = len(sentence)
+
+counts = []
+for i in range(len(keywords)):
+    counts.append(0)
+
+for i in range(len(TF)):
+    counts[TF[i][1]] += 1
+
+# print(counts)
+for i in range(len(keywords)):
+    IDF.append((1+math.log(N/counts[i])))
+
+# f5 = open("./idf.txt", 'w+')
+# for i in IDF:
+#   f5.write(str(i) + "\n")
 
 
-# stemmer = PorterStemmer()
-# queryString = stemmer.stem(queryString)
+# # Calculating Importance Matrix (TFIDF Matrix) and writing in the tf-idf.txt
+Importance_Matrix = []
+# f6 = open('./tf-idf.txt', 'a+')
+for i in range(len(TF)):
+    Imp_Matrix = []
+    Imp_Matrix.append(TF[i][0])
+    Imp_Matrix.append(TF[i][1])
+    Imp_Matrix.append(TF[i][2] * IDF[TF[i][1]])
 
-# print(queryString)
+    Importance_Matrix.append(Imp_Matrix)
+    # f6.write(str(Imp_Matrix)+'\n')
 
 
-# # Lanc_stemmer = LancasterStemmer()
-# # queryString = Lanc_stemmer.stem(queryString)
+# # Calculate Magnitude of the vector and writing in the Magnitude.txt
+Magnitude = []
 
-# # print(queryString)
+for i in range(len(sentence)):
+    Magnitude.append(0.0)
 
-# # Call the function
-# get_similar_articles(queryString, df)
+for i in range(len(Importance_Matrix)):
+    Magnitude[Importance_Matrix[i][0]] += Importance_Matrix[i][2] * \
+        Importance_Matrix[i][2]
+
+for i in (range(len(Magnitude))):
+    Magnitude[i] = math.sqrt(Magnitude[i])
+
+
+f7 = open("./Magnitude.txt", 'w+')
+for i in Magnitude:
+  f7.write(str(i) + "\n")

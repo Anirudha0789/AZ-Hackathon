@@ -1,0 +1,66 @@
+
+It is free time in school and heavy rain outside. So students have to sit in class and wait for 1 hour for next period. Here two friends Aaron and Ben play the Rock Paper Scissors game. You are there friend and need to determine who wins.
+Both players can choose moves from the set {R,P,S}.
+The game is a draw if both players choose the same item.
+The winning rules of RPS are given below:
+        Rock crushes scissor
+        Scissor cuts paper
+        Paper envelopes rock
+Input:
+The first line of input contains T denoting the number of test cases. T test cases follow. Each test case contains a single line of input that contains two characters side by side. These characters denote the moves of players A and B respectively.
+Output:
+For each test case, in a newline, print the winner. If the match is drawn, print 'DRAW'.
+Constraints
+1<= T <= 50
+Sample Input:
+    7
+    RR
+    RS
+    SR
+    SP
+    PP
+    PS
+    RP
+
+Sample Output:
+    DRAW
+    A
+    B
+    A
+    DRAW
+    B
+    B
+
+EXPLANATION:
+This list is :
+[1,8,27,64,125..]−>[7,19,37,61..]−>[12,18,24..]−>[6,6,6..][1,8,27,64,125..]−>[7,19,37,61..]−>[12,18,24..]−>[6,6,6..]. Number of times 2 divides 6 is 1. Hence the answer is 1.
+
+Author(s):
+
+1★varghesebabu
+
+Editorial:
+https://discuss.codechef.com/problems/TNP504
+Tags:
+
+               
+                 help, python, varghesebabu
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+29-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,48 @@
+
+You are given all numbers between 1,2,…,n1,2,…,n except one. Your task is to find the missing number.
+Input:
+The first input line contains an integer nn.
+The second line contains n−1n−1 numbers. Each number is distinct and between 11 and nn(inclusive).
+Output:
+Print the missing number.
+Constraints
+
+2≤n≤2∗1052≤n≤2∗105
+
+Sample Input:
+5   
+     2 3 1 5   
+
+Sample Output:
+4   
+
+
+Author(s):
+
+2★runcode_ap07
+
+Editorial:
+https://discuss.codechef.com/problems/CODEBRK1
+Tags:
+
+               
+                 brkr2020, c-plus-plus, easy, runcode_ap07
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

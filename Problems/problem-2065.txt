@@ -1,0 +1,87 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+There are two integer sequences A1,A2,…,ANA1,A2,…,AN and B1,B2,…,BMB1,B2,…,BM. You do not know the exact values of their elements, but you know that Li≤Ai≤RiLi≤Ai≤Ri for each valid ii and Pi≤Bi≤QiPi≤Bi≤Qi for each valid ii.
+You also have a matrix CC with NN rows and MM columns. Some elements of CC are missing. For each element Ci,jCi,j (1≤i≤N1≤i≤N, 1≤j≤M1≤j≤M) that is not missing, you know that Ci,j=Ai⊕BjCi,j=Ai⊕Bj (⊕⊕ denotes bitwise XOR).
+Your task is to find two sequences AA and BB satisfying all given conditions. If multiple solutions exist, you may find any one.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and MM. 
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains two space-separated integers LiLi and RiRi.
+MM lines follow. For each ii (1≤i≤M1≤i≤M), the ii-th of these lines contains two space-separated integers PiPi and QiQi.
+NN more lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains MM space-separated integers Ci,1,Ci,2,…,Ci,MCi,1,Ci,2,…,Ci,M. Missing elements are denoted by −1−1.
+
+Output
+For each test case:
+
+If no solution exists, print a single line containing the string "NO".
+Otherwise, print three lines. The first line should contain the string "YES". The second line should contain NN space-separated integers A1,A2,…,ANA1,A2,…,AN. The third line should contain MM space-separated integers B1,B2,…,BMB1,B2,…,BM.
+
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N,M≤1031≤N,M≤103
+the sum of N⋅MN⋅M over all test cases does not exceed 106106
+0≤Li≤Ri<2300≤Li≤Ri<230 for each valid ii
+0≤Pi≤Qi<2300≤Pi≤Qi<230 for each valid ii
+−1≤Ci,j<230−1≤Ci,j<230 for each valid i,ji,j
+
+Example Input
+2
+3 3
+2 4
+3 4
+4 6
+1 3
+4 7
+6 8
+2 7 4
+5 0 3
+4 1 2
+2 2
+4 6
+5 7
+3 9
+2 4
+3 6
+6 5
+
+Example Output
+YES
+3 4 5
+1 4 7
+NO
+
+
+Author(s):
+
+6★kingofnumbers
+
+Editorial:
+https://discuss.codechef.com/problems/XORTABLE
+Tags:
+
+               
+                 Bitwise Operation, Cycles, Constructive
+                 
+                     
+                     Mathematics, Bit Manipulation, Algorithms, Graph Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-05-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

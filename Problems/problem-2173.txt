@@ -1,0 +1,64 @@
+
+The chef is trying to solve some pattern problems, Chef wants your help to code it. Chef has one number K to form a new pattern. Help the chef to code this pattern problem.
+Input:
+
+First-line will contain TT, the number of test cases. Then the test cases follow. 
+Each test case contains a single line of input, one integer KK. 
+
+Output:
+For each test case, output as the pattern.
+Constraints
+
+1≤T≤51≤T≤5
+5≤K≤105≤K≤10
+
+Sample Input:
+2
+5
+6
+
+Sample Output:
+1*
+26*
+3710*
+481113*
+59121415*
+1*
+27*
+3812*
+491316*
+510141719*
+61115182021*
+
+EXPLANATION:
+No need, else pattern can be decode easily.
+
+Author(s):
+
+2★references
+
+Editorial:
+https://discuss.codechef.com/problems/ITGUY80
+Tags:
+
+               
+                 help, references
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+31-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

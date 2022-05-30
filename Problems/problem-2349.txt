@@ -1,0 +1,62 @@
+
+ 
+Superman has become fed up of fighting Batman and decides to throw the Moon at the Earth and end it once and for all. However, for maximum theatrical effect, he decides to do it during a total solar eclipse. He has a list of potential star systems where he wants to do a trial. But first he needs to know which of these systems are having a total solar eclipse at the present moment.
+ 
+Input
+
+The first line of the input contains an integer T denoting the number of test cases.
+The first line of each test case contains four integers XS, YS, ZS and RS denoting the coordinates and radius of the star S.
+The second line of each test case contains four integers XA, YA, ZA and RA denoting the coordinates and radius of the heavenly body A.
+The third line of each test case contains four integers XB, YB, ZB and RB denoting the coordinates and radius of the heavenly body B.
+
+ 
+Output
+
+For each test case, if the body A causes a total eclipse on any part of the surface of body B, output a single line containing the word "Yes" else output the word "No" (without quotes).
+
+ 
+Constraints
+
+0 ≤ all coordinates ≤ 109
+1 ≤ all radii ≤ 106
+ 
+Example
+Input:
+1
+0 0 0 10
+50 0 0 5
+65 0 0 8
+
+Output:
+Yes
+ 
+
+Author(s):
+
+2★nib_ir
+
+Editorial:
+https://discuss.codechef.com/problems/CLMNTR
+Tags:
+
+               
+                 cole2016, geometry, mathematics, medium, nib_ir
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+2-02-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

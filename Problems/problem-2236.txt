@@ -1,0 +1,105 @@
+
+This is an Interactive problem  
+Zeno sama hosted a Martial arts competition between 1212 universes in which the twin universes will be teaming together to fight. To participate in the tournament you must have exactly kk fighters from your team.  
+Beerus from Universe 7 and Champa from Universe 6 are teaming together and choose you as the manager of their team.  
+You have total NN fighters after combining Universe 66 & 77 numberd from 1−N1−N , from which you have to choose kk fighters.
+Now to win the tournament, your team of kk should consist of more fighters from Universe 77 compared to Universe 66 as universe 77 is strong.  
+NOTE: There should be at least one fighter from each universe 
+You know that to build the team you should know the count of fighters from Universe 7 and Universe 6, and to get that you can ask 2 types of Queries to beerus,Asking too much queries can cost you HAKAI from beerus which can destroy you, so you can ask maximum Q queries of Type-11 and F queries of Type-22.
+The Queries are given below:  
+
+For Type-1 query you give ii and jj as index of fighters and beerus will reply id ithith and jthjth fighter are of same universe or not.  
+For Type-2 query you give ii as an index of fighter and beerus will reply with the universe tow which that ithith fighter belong to.
+After processing queries, you should find the probability of making such team which can win the tournament.
+The probability can be represented as P/QP/Q you have to calculate P∗Q−1P∗Q−1 modmod (109+7)(109+7), Where Q−1Q−1 is the modular multiplicative inverse of QQ (mod(mod (109+7))(109+7))
+
+Interaction
+
+First, your program should read a line containing a single integer ― the number of test cases TT. The description of interaction for TT test cases follows.  
+Read the first line of each test case that contains two space-separated integers NN and KK denoting number of fighters after combining both the universes and number of fighters required in a team  
+Now for each test case you may ask queries as below
+Type-1 : To ask this type of query print a line containing the character 'Q' a space and two space-separated integers ii and jj (1≤i,j≤N1≤i,j≤N and i≠ji≠j),denoting the indexes of fighters.After this you should read one int which is the response from beerus, If both are from the same universe Beerus will reply with '1' else he will reply with '0'
+Type-2 : To ask this type of query print a line containing the character 'F' a space and an integer ii denoting the index of fighter,After this you should read one int which is 66 or 77 ,the Universe to which the ithith fighter belong to.
+When you think you got the probability you should print a line containing a character 'A' and your probability in the form of P∗Q−1P∗Q−1 modmod (109+7)(109+7) space separated.
+Don't forget to flush the output after printing each line!!
+fflush(stdout) in C++.
+System.out.flush() in Java.
+print("output",flush=True) in Python.
+flush(output) in Pascal.
+See the documentation for other languages.   
+
+Constraints
+
+1≤T≤1001≤T≤100
+2≤N≤1052≤N≤105
+2≤K≤N2≤K≤N
+
+Subtasks
+SubtaskSubtask 11 (10(10 points)points) ::
+
+F=NF=N
+Q=N−1Q=N−1
+2≤N≤1002≤N≤100 
+
+SubtaskSubtask 22 (10(10 points)points) 
+
+Q=(N∗(N−1))/2Q=(N∗(N−1))/2
+F=1F=1
+2≤N≤1002≤N≤100 
+
+SubtaskSubtask 33 (80(80 points)points) 
+
+F=1F=1
+Q=N−1Q=N−1
+
+EXAMPLE:
+You                   Grader  
+                            1
+                            5 4  
+F 1  
+                            7 
+F 2  
+                            7  
+F 3  
+                            7  
+F 4  
+                            6
+F 5
+                            7
+A 600000005
+
+Explanation:
+From the interaction we can see that there are 44 fighters from universe 77 and 11 fighter from universe 66. As we have to make the team of 44 The probability can be given as P/QP/Q
+where P=4C3∗1C1=4P=4C3∗1C1=4 and Q=5C4=5Q=5C4=5
+as P=4P=4 and Q=5Q=5 the ans P∗Q−1P∗Q−1 modmod (109+7)=600000005(109+7)=600000005
+NOTE : In This Interaction the Type-22 Queries has been asked NN times so only subtask 11 will pass, This don't guarantee you 100100 pts
+
+Author(s):
+
+3★mj_13
+
+Editorial:
+https://discuss.codechef.com/problems/TEAMTOP
+Tags:
+
+               
+                 c-plus-plus, combinatorics, easy-medium, imti2020, mj_13, modular-arith, modular-inv, probability
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+25-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

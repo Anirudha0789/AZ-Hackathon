@@ -1,0 +1,53 @@
+
+NehaNeha want to reach a destination but she decide that she can make moves in two directions only. If NehaNeha is at position (x,y)(x,y) , then she can move to (x+1,y+1)(x+1,y+1)  or (x+1,y)(x+1,y). NehaNeha must start her journey from (0,0)(0,0) and her destination is (X,Y)(X,Y) . Your task is to find the minimum number of moves that NehaNeha require to reach the destination or if she cannot reach the destination.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, two integers X,YX,Y. 
+
+Output:
+For each test case, print a single line denoting the minimum number of moves that NehaNeha must take to reach the destination. Print -1 if she cannot reach the destination.
+Constraints
+
+1≤T≤10001≤T≤1000
+|X|,|Y|≤10e9|X|,|Y|≤10e9
+
+Sample Input:
+1
+1 0
+Sample Output:
+1
+EXPLANATION:
+NehaNeha can take step from (x,y) to (x+1,y) .
+So she can take step from (0,0) to (1,0).
+Number of moves is 1 and is the optimal solution.
+
+Author(s):
+
+3★dcpandey
+
+Editorial:
+https://discuss.codechef.com/problems/ZEN2
+Tags:
+
+               
+                 c, c-plus-plus, coordinate, dcpandey, easy, uiet2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+7-08-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

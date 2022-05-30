@@ -1,0 +1,61 @@
+
+Sondesh likes Triangles very much except Bermuda triangle. Her Personal Assistant Meaw likes polygon. Once she found a magic stick box. Then she made NN triangles in a way that:
+
+All the triangles are same and congruent
+All the triangle connects to at least one common point
+Triangles will never overlap each other.
+
+Suddenly Sondesh figured out that she made a Regular polygon with those triangle. She told her Meaw to count all the sticks in that polygon and not to count if the formation is not a polygon.
+
+Sondesh Can use so many sticks and create a big formation. She will help Meaw by telling the number of triangle NN. 
+Can you help Meaw by saying how many stick was used in that polygon?
+Input:
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single integer, NN - Number of triangles in the formation. It can be possible that Sondesh had not been able to form a single triangle
+Output:
+For each testcase, output a single integer deonoting number of sticks used by Sondesh. 
+If Sondesh failed to make a polygon print −1−1.
+Constraints:
+
+1≤T≤1041≤T≤104
+0≤N≤1060≤N≤106
+
+Sample Input:
+2
+1
+6
+
+Sample Output:
+3
+12
+
+
+Author(s):
+
+3★aref111n
+
+Editorial:
+https://discuss.codechef.com/problems/MKTRNG
+Tags:
+
+               
+                 aref111n, blas2020, easy, geometry
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+14-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

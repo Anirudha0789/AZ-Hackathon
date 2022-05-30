@@ -1,0 +1,102 @@
+
+If you’re ever chilling in Swaragi Canteen, you might come across a family of 3 dogs on the way. If you’re not familiar with them; meet Cinnamon, Feather and Mahesh, a cute family of 3 Indian Pariah dogs. Now for unsuspicious people like us, they seem like normal canines but the reality is very different. Cinnamon is a covert agent in the Central Intelligence Pawgency (CIP). She’s had a very successful career as an undercover paw-gent in protecting and safeguarding her loved ones, both dogs and humans. Recently she’s learnt that a truck containing lots of biscuits will be arriving at Swaragi canteen. Since the resources in the dog neighborhoods have been running low, she decides to ambush the truck and steal the biscuits. Cinnamon knows that she’s going to retire after a few missions and hence wants to train Mahesh and Feather to be her successors in the CIP. Cinnamon does not know the exact time at which the truck will arrive and hence decides to break into Kaka Canteen’s (Kaka Canteen is the owner of Swaragi Canteen) safe to get the information. 
+But Kaka Canteen is very careful and clever. His safe is a bit special.
+The safe contains two levers lever1lever1 and lever2lever2 and an integer locknumlocknum.
+Each lever consists of a combination of :
+
+an uppercase letter which has a value assigned to it.
+a number such that it is divisible by the value of the letter.
+any one of the 4 special characters ‘#’, ‘%’, ‘@’, ‘&’ , which also has a value assigned to it.
+
+It is guaranteed that all three criteria above are mutually exclusive.
+The value of each lever is calculated as : 
+value_of_letter+number_divisible_by_given_value_of_letter+value_of_special_charactervalue_of_letter+number_divisible_by_given_value_of_letter+value_of_special_character
+The lock will open if and only if the absolute difference between values of lever1lever1 and lever2lever2 is greater than locknumlocknum. Note that any two patterns which satisfy given constraints will open the lock.
+Cinnamon knows all the characters that can occur in the combination, their values, list of all numbers that can occur and values of special characters, but does not know the exact combination. She is assigning the task of opening this safe to Mahesh and Feather (they work well as a team). Since Mahesh is busy crossing the rainbow bridge, Feather is borking for your help.
+Help Feather to crack-a-code !
+Input:
+
+First line contains TT, the number of testcases
+Second line contains three space separated integers NN (the number of letters and their values), KK (all the possibilities of values that can occur) and locknumlocknum (as explained in the problem statement above).
+Next NN lines contain an uppercase alphabet and its value.
+Next line contains KK numbers representing all the possible values.
+Next line contains values of ‘@’, ‘#’, ‘%’ and ‘&’ respectively.
+
+Output:
+For each testcase, print "WOOF" (without quotes) if there is a valid lock combo, else print "HECK" (without quotes) if no such combination exists.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤261≤N≤26
+1≤K≤1001≤K≤100
+1≤locknum≤1091≤locknum≤109
+1≤charactervalues≤1091≤charactervalues≤109
+1≤symbolvalues≤1091≤symbolvalues≤109
+
+all character values are unique.
+Sample Input:
+2
+4 10 69
+C 3
+B 9
+Q 4
+D 7
+4 3 7 12 99 32 10 17 18 20
+3 4 6 5
+3 3 420
+X 20
+Y 12
+Z 7
+69 22 42
+1 2 3 4
+
+Sample Output:
+WOOF
+HECK
+
+EXPLANATION:
+For testcase 1 :
+Here, we see that values for C, B, Q, D are 3,9,4,7.
+Values divisible by 3 from given values are 3,12,18,99
+Values divisible by 9 are 99,18
+Values divisible by 4 are 4,12,32,20
+Values divisible by 7 are 7
+Similarly,
+Value of @ is 3
+Value of # is 4
+Value of % is 6
+Value of & is 5
+The combination for lever1lever1 could be C99% which equals to 3+99+6=1083+99+6=108 and lever2lever2 could be Q12@ which equals to 4+12+3=194+12+3=19. The absolute difference between lever1lever1 and lever2lever2 is 8989 which is greater than 6969 and hence a valid combination. Since lock can be opened, "WOOF" is printed.
+For testcase 2 :
+No matter which combination you try, it’ll always be less than 420.
+Since lock cannot be opened, "HECK" is printed.
+
+Author(s):
+
+2★linton_dawson
+
+Editorial:
+https://discuss.codechef.com/problems/CAC203
+Tags:
+
+               
+                 constructive, easy, implementation, linton_dawson, map
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-07-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

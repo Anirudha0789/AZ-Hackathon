@@ -1,0 +1,71 @@
+
+You are playing an RPG and initially, you have 10001000 health points and 10001000 attack points. You are required to break into a fortress with nn guards, and each guard has an attack and health stat. You have grinded 5,0005,000 XP from previous levels. An XP can be used to either raise your health or attack by a unit. You must spend all your XP before starting this challenge.
+You fight with the guards one by one, and with each guard, you trade blows simultaneously, i.e., you lose health points equal to the opponent's attack, and the opponent would lose health equal to your attack points. The person whose health becomes ≤0≤0 first loses the fight. In case it happens simultaneously for both, you win. 
+When a guard of the fortress is defeated you move on to the fight the next guard, but you do not recover the lost XP or health points.
+Input:
+
+The first line contains TT, the number of test cases.
+The first line of each test case contains nn, denoting the number of guards.
+The next nn lines of each test case contain xixi and yiyi denoting the health and attack stat of the ithith guard. 
+
+Output:
+For each test case, print a single line with one word.
+Print YESYES if you can break into the fortress, i.e. defeat all nn guards, otherwise print NONO.
+Constraints:
+
+1≤T≤201≤T≤20
+1≤n≤101≤n≤10
+100≤xi,yi≤5000100≤xi,yi≤5000
+
+Sample Input:
+2
+3
+2000 500
+500 1000
+3500 1250
+3
+1000 2000
+1000 2000
+4000 2000
+
+Sample Output:
+YES
+NO
+
+Explanation:
+Say we devote 20002000 XP to attack points and 30003000 for health points.
+While facing the first guard after the first trade the guard's health goes from 20002000 to 00 (as the player has attack 2000+1000=30003000). The player's health goes from 40004000 (3000+1000) to 35003500.
+While facing the second guard he again one-shots the guard, while losing 10001000 health, so current health = 25002500.
+While facing the last guard, they trade blows twice. After the first blow, the guard and the player have 500500 and 12501250 health respectively.
+And after the second blow, they have 00 and 00 health respectively.
+But since the last guard is defeated we output “YES”.
+
+Author(s):
+
+3★kabirkanha
+
+Editorial:
+https://discuss.codechef.com/problems/SWO
+Tags:
+
+               
+                 brute-force, kabirkanha, snuc2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+25-10-2020
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

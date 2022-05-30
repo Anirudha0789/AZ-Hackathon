@@ -1,0 +1,54 @@
+
+Ish and Govi are playing with strings. In this game Ish gives Govi two strings, aa and bb. Govi has to modify the string aa, such that it doesnot contain any character from string bb. Govi has to go to meet Omi. Help Govi to modify the string aa.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains two lines representing string aa and bb respectively. 
+
+Output:
+For each testcase, output in a single line answer, the modified string aa such that it doesnot contain any character from string bb.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤a≤1051≤a≤105
+1≤b≤1051≤b≤105
+Both string are of Uppercase English Alphabets
+
+Sample Input:
+ 1
+ IKAIPOCHE
+ ISH
+
+Sample Output:
+ KAPOCE
+
+
+Author(s):
+
+4★insanenerd2507
+
+Editorial:
+https://discuss.codechef.com/problems/ISHGAME
+Tags:
+
+               
+                 brute-force, easy, insanenerd2507, lico2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-06-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

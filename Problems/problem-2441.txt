@@ -1,0 +1,65 @@
+
+There are protests going on in the state all around !!!!!! :(  .
+To reduce the violent nature of Protests,
+The government has decided to Barricade  Bi-directional roads ,By placing a Barricade  on a Bi-directional  road it will turn to uni-directional road,
+you being the only Advisor of your state , you realized that there would be transport issues for primary protocols in the town  which are economically very costly , so you decided that  even after placing Barricades , it should be possible to reach each city from every other city , your task is to find the maximum number of bi-directional roads that can be considered for Barricading.
+NOTE : To begin with there is some way from each city to every other city and there can be multiple Bi-directional roads between two cities
+Sample Map of the state:
+
+Input:
+
+First line will contain Two space separated integers N,MN,M, number of cities and Bi-directional Roads
+Next M lines follow two space separated  Integers a and b , which is a road between city a and city b
+
+Output:
+Output a single Integer the maximum number of roads which can be considered for Barricading .
+Constraints
+
+2≤N,M≤2∗1052≤N,M≤2∗105
+1≤a,b≤2∗1051≤a,b≤2∗105
+it is guaranteed that a is not equal to b
+
+Sample Input:
+3 3
+
+1 2
+2 3
+3 1
+Sample Output:
+3
+
+EXPLANATION:
+
+1< ------ > 2 <------ > 3 <----> 1 
+In this case the you can convert it to 1 ----- > 3 ----- >2 ----- > 1, and there is way   from each city to every other city 
+another possibility is 1< -----3 < ------2< ----- 1, so each road can be considered for Barricading  
+
+Author(s):
+
+3★yashu2040
+
+Editorial:
+https://discuss.codechef.com/problems/PRTWHY
+Tags:
+
+               
+                 bridges, coca2020, depth-first-search, yashu2040
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+10-06-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

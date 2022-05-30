@@ -1,0 +1,70 @@
+
+You are given a tree with NN vertices rooted at vertex 11, where ithith vertex having a value AiAi.
+You are also given QQ queries where each query gives you a node uu and a value valval. You need to add valval to each node vv such that vv is in the subtree of uu
+Input:
+
+First line will contain NN and QQ, number of nodes and queries respectively.
+Second line contains NN space separated integers, the initial value of each node.
+Next N−1N−1 lines contain two integers uu and vv representing an edge between nodes uu and vv.
+The next QQ lines contain two integers each uu and valval as explained in the problem statement.
+
+Output:
+Output a single like containing NN space separated integers where the ithith integer denotes the value of the ithith node after all queries have been executed.
+Constraints
+
+1≤N,Q≤5×1051≤N,Q≤5×105
+1≤Ai,val≤1051≤Ai,val≤105
+1≤u≤N1≤u≤N
+
+Subtasks
+
+20 points : 1≤N,Q≤10001≤N,Q≤1000
+80 points : Original constraints
+
+Sample Input:
+ 5 3
+ 1 1 1 1 1
+ 1 2
+ 1 3
+ 3 4
+ 3 5
+ 1 1
+ 2 3
+ 3 2
+
+Sample Output:
+ 2 5 4 4 4
+
+Explanation
+
+Each node has an initial value of 1. The first query adds 1 to each node(since all nodes are in the subtree of node 1). Second query adds 3 to all nodes in subtree of node 2 and node 2 is a leaf so, it itself is the only node in its subtree. Third query adds 2 to all nodes in the subtree of node 3, namely nodes 3, 4 and 5.
+
+Author(s):
+
+3★ista2000
+
+Editorial:
+https://discuss.codechef.com/problems/TREEUGH
+Tags:
+
+               
+                 depth-first-search, difference-array, easy, eulerian-tour, icop1901, ista2000, lazy-propagation
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+26-06-2018
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

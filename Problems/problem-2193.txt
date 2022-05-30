@@ -1,0 +1,54 @@
+
+Motu and Patlu are playing with a Magical Ball. Patlu find some interesting pattern in the motion of the ball that ball always bounce back from the ground after travelling a linear distance whose value is some power of 22. Patlu gave Motu total distance DD travelled by the ball and ask him to calculate the minimum number of bounces that the ball makes before coming to rest.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, single integers DD.
+Note : Power of 22 must be a non-negative integer. 
+
+Output:
+For each testcase, output in a single line answer, the minimum number of bounces the ball makes before coming to rest.
+Constraints
+
+1≤T≤1051≤T≤105
+11 ≤≤ MM< 1010^18
+
+Sample Input:
+  1
+  13 
+
+Sample Output:
+  2
+
+EXPLANATION:
+
+
+Author(s):
+
+2★piyushbhutani
+
+Editorial:
+https://discuss.codechef.com/problems/BBALLS
+Tags:
+
+               
+                 c-plus-plus, easy, piyushbhutani, smtc2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+22-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

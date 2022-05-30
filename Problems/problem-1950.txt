@@ -1,0 +1,74 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef has a string SS with length NN. He needs to find the number of indices ii (1≤i≤N−11≤i≤N−1) such that the ii-th character of this string is a consonant and the i+1i+1-th character is a vowel. However, he is busy, so he asks for your help.
+Note: The letters 'a', 'e', 'i', 'o', 'u' are vowels; all other lowercase English letters are consonants.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains a single string SS with length NN.
+
+Output
+For each test case, print a single line containing one integer ― the number of occurrences of a vowel immediately after a consonant.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1001≤N≤100
+SS contains only lowercase English letters
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+3
+6
+bazeci
+3
+abu
+1
+o
+
+                        Sample Output 1
+                        
+
+3
+1
+0
+Explanation
+Example case 1: The vowel 'a' follows after the consonant 'b', 'e' follows after 'z' and 'i' follows after 'c', so the answer is 33.
+Example case 2: The only vowel 'u' follows after 'b', so the answer is 11.
+
+Author(s):
+
+7★vivek_1998299
+
+Editorial:
+https://discuss.codechef.com/problems/CV
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+16-05-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

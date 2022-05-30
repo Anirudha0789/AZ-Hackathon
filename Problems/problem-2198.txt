@@ -1,0 +1,52 @@
+
+You are given a number X. You have to tell the count of number that are power of two.
+If a number is in the power of two, check for that number as well. Let X=2, we know 2 is a power of 2 and its power is 1. 1is also a power of 2 and its power is 0. So 1 is the only number which can be represented as a power of 2(2^1=2) and it is also in the power of 2(2^0=1).
+Note: Here we don't consider 2.
+Input:
+t: Number of test cases
+X: An given number  
+Output:
+The number of power of 2's which is a power of 2  
+Constraints:
+1<=t<=1000
+1<=X<=10^6  
+Sample Input:
+2
+3
+16  
+Sample Output:
+0
+3  
+Explanation:
+Since 3 is not power of 2 so the answer is 0  
+16 is a power of 2. Its power is 4. 4 is a power of 2. Its power is 2. 2 is also a power of 2. Its power is 1.1 is also a power of 2. Its power is 0. Now 0 is not a power of 2. Since  4,2,1 are power of 2 therefore the answer is 3.
+
+Author(s):
+
+4★carpe_diemist
+
+Editorial:
+https://discuss.codechef.com/problems/POWOF2
+Tags:
+
+               
+                 c-plus-plus, carpe_diemist, number-theory
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+28-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

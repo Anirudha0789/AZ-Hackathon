@@ -1,0 +1,76 @@
+
+          
+            Zoom has once again planned to bring havoc on the Central City. This time he has planted some bombs in the city which contain virus which will spread once the bomb goes off.
+
+It's too late and the bombs have gone off. Flash reaches the city to help the people. Cisco has to guide Flash, and he has asked Flash to run around the affected regions to contain the spread of virus.
+
+Cisco has the coordinates of the points which are the corners of the affected regions and he has sent these coordinates to Flash. Flash needs to make calculations so as to attain the perfect speed. For this he needs to know the total perimeter and area of the affected region. In this moment of emergency, they ask you for help.
+
+Given a set of points which are the corners of the affected regions, you have to tell Flash the total area and total perimeter of the affected regions.
+Since Central City is planned, you can assume that all the sides of the affected regions are parallel to either X-axis or Y-axis and also none of the affected regions intersect.
+
+If you can't find regions such that all the points are the only corners and regions are closed, print "Impossible"
+Input : 
+
+First line of the input contains N, number of corners given by Cisco.
+Following N lines contains coordinates of ith corner (x, y).
+
+Output : 
+
+A single line containing two values, Area and Perimeter of the  closed region. If no closed region can be formed using given corners, print "Impossible" (without quotes).
+
+Constraints : 
+
+1 <= N <= 100
+0 <= Xi, Yi <= 10^6
+
+Example
+Input:
+12
+15 7
+0 15
+5 2
+10 15
+5 7
+10 10
+7 10
+0 10
+20 15
+7 15
+15 2
+20 10
+Output:
+135 84
+
+Explanation : 
+With given corners, there are 3 rectangles.
+
+So the area is 135 and perimeter is 84.
+
+Author(s):
+
+4★mmaks
+
+Tags:
+
+               
+                 geometry, insomnia, line-sweep, mmaks, mnnit
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-09-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+JAVA, C, CPP14, PYP3
+
+Submit

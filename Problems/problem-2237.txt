@@ -1,0 +1,52 @@
+
+Santa Claus loves to play with numbers since childhood. Santa’s mother has given him an array of numbers and tells him to choose any two number where both has three factors separately. For e.g.: -
+If the array is [ 5, 6, 25, 4], then factors of 25 are 1, 5, 25, and factors of 4 are 1, 2, 4. So Santa can choose both numbers 25 and 4. Santa asks you to tell him is it possible to choose any two numbers where both the number has three factors separately.
+Input
+First line contains n (1 <= n <= 10^4) where n is size of the array.
+Second line contains n space separated integers ai (1 <= ai <= 10^12) where ai is the i-th element
+ (1 <= i <= n).
+Print “Yes”“Yes” (without quotes) if it is possible to choose two number where both has three factors separately
+else print “No”“No” (without quotes) in single line.
+Constraints
+2 <= n <= 10^4
+1 <= ai <= 10^12
+Sample Input
+2
+1 4
+Sample Output
+No
+Sample Input
+5
+2 6 25 220 121
+Sample Output
+Yes  
+
+Author(s):
+
+3★avishake_maji
+
+Editorial:
+https://discuss.codechef.com/problems/SANTAFAV
+Tags:
+
+               
+                 avishake_maji, c-plus-plus, jc22020, medium, number-theory
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

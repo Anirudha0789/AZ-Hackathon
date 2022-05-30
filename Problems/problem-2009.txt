@@ -1,0 +1,68 @@
+
+The Land of Fire has its towns organized in straight line.The towns are numbered 1,2,3,...,so on1,2,3,...,so on starting from the left. Every town has secret bidirectional tunnels that directly connects this town to the towns which are exactly MM towns away from it. Also there are bidirectional roads in each town which connect that town to its immediate left and right towns (if they exist). 
+The tax for using any road once is XX units while the secret tunnels can be used without any tax. A person is allowed to use any road and any tunnel available in his current town any number of times.
+NN friends want to plan a reunion in a town where the sum of taxes payed by each of them to reach that town will be minimum possible. They want your help to find the minimum sum of taxes.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+First line of each testcase contains three integers N,M,XN,M,X. 
+Second line of each testcase contains NN integers where titi represents the current town of ii-th person. 
+
+Output:
+For each testcase, output in a single line the minimum sum of taxes.
+Constraints
+
+1≤T≤501≤T≤50
+1≤N≤1051≤N≤105
+2≤M≤1032≤M≤103
+1≤X,ti≤1091≤X,ti≤109
+
+Subtasks
+
+30 points : 1≤N≤10001≤N≤1000
+70 points : Original constraints.
+
+Sample Input:
+1
+3 6 20
+18 22 15
+
+Sample Output:
+60
+
+EXPLANATION:
+1st friend follows 18->24(tunnel), 24->23(road), 23->22(road) with tax of 2*20=40 units.
+3rd friend follows 15->21(tunnel), 21->22(road), with tax of 20 units.
+2nd friend remains in same town, so he won't pay any tax.
+Therefore, sum of taxes=40+0+20=60 units.
+All other paths will give sum greater than or equal to 60 units.
+
+Author(s):
+
+5★mayureshpatle
+
+Editorial:
+https://discuss.codechef.com/problems/CAC103
+Tags:
+
+               
+                 brute-force, cace2020, easy-medium, mayureshpatle
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+16-01-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,69 @@
+
+Aman thinks of himself as the smartest shopper alive. He has a habit of trying to make the most of the money present in his wallet.
+Saurabh has been planning to go to the weekend special market for some purchasing. Weekend special market is a group of some interrelated shops. There are a total of 'n' shops with exactly 'n-1' corridors between different shops and each shop has atleast one path through which it can be reached from the main enterance. These corridors have a one-person-once-pass policy; i.e. a person can pass through a corridor only once (may it be in any direction).
+Every shop i offers their customers a fix number of items denoted by Ai in exchange of an amount Pi. Ofcourse its on customers will to decide whether to make the deal on a shop he passes through or not.
+Saurabh has a fix budget of Rs 'k' for his shopping campaign. As he is not very good in shopping he has decided to entrust all his budget money to Aman and hope that aman will be able to get him maximum number of items possible to purchase in that given budget.
+Aman will be starting from the very first shop '1'. Help him find the maximum number of items that can be purchased within the given budget, so that he could match up to the expectations that Saurabh has from him.
+Note : It's guaranteed that, one can reach each shop from shop 1 using corridors.
+Input
+The first line of input contains a single integer n, denoting the number of shops in the weekend market.
+The next n - 1 lines contain two integers i, j denoting that there is a corridor from shop i to j . 
+The next line contain n space seperated integers. The ith integer denotes Ai, the number of items offered by the ith shop. and Pi, Ai denoting the number of items, while Pi denoting the Price for the deal at shop i. 
+The next line contain n space seperated integers. The ith interger denotes Pi, the Price for the deal at shop i.
+The next line contains a single integer k denoting the budget for the shopping campaign.
+Output
+For every testcase output a single integer M in a new line, denoting the maximum no. of items that can be purchased in the given market conditions with the given budget.
+Constraints
+1 ≤ n ≤ 600
+1 ≤ i, j ≤ n
+1 ≤ k ≤ 12*10^3
+1 ≤ Ai ≤ 100000
+1 ≤ Pi ≤ k
+
+Example
+Input:
+7
+3 1
+2 1
+7 6
+6 3
+5 3
+4 3
+4 7 7 2 3 4 7
+2 1 3 6 2 3 1
+5
+
+Output:
+14
+
+Hint: Leave first shop->move to shop 3->purchase there->move to shop 6->leave it->move to shop 7->purchase there. purchased items=7+7=14, spend budget= 3+1=4 <5.
+
+Author(s):
+
+3★aman8050
+
+Editorial:
+https://discuss.codechef.com/problems/SSQ
+Tags:
+
+               
+                 aman8050, depth-first-search, knapsack
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+26-09-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

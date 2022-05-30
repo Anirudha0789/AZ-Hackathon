@@ -1,0 +1,58 @@
+
+Sachin and Sakshi are Newly Married couple in the town. And since our couple are bit romantic the air in the town is filled up with the love. I hope you can feel it like me. Because they belive that "Love is Life" . 
+Today our couple is going to buy some Food for the childs living in orfanage. The food items are being sold at price Z rupees per food item. Let's consider Sachin has A rupees and Sakshi has R rupees with them. Both i.e Sachin and Sakshi will buy as many food items they can from their own money not by sharing each other because both belive in independent idologies. This way each of them will buy an integer non-negative number of food items. But after some time they both came up with good idea and found that the total number of food items they buy can increase (or decrease) if one of them gives several rupees to the other. 
+(NOTE : The rupee will always strictly be a non-negative integer only).
+So Sachin and Sakshi want to exchange with rupees in such a way that they will buy the maximum possible number of food items. so among all possible ways to buy the maximum possible number of food items find such a way that minimizes the number of rupees one can share with other.
+Your job is to print the Minimum number of rupees one will share with other to buy the maximum number of food items.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, two integers A,R,ZA,R,Z. 
+
+Output:
+For each testcase, output in a single line answer contaning the Miniumum number of rupees one will share with other to buy the maximum number of food items.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤A,R,Z≤2∗1091≤A,R,Z≤2∗109
+
+Sample Input:
+2
+50 40 30
+60 80 20
+Sample Output:
+10
+0
+EXPLANATION:
+Testcase1:−Testcase1:−
+Sachin has 50 rupees and Sakshi has 40 rupees, and the price for one food item is 30 rupees. If they don't exchange with rupees, they will buy 1+1=2 food items. BUT if Sakshi gives Sachin ten rupee, then Sachin will have 60 rupees, Sakshi will left with 30 rupees, and with this exchange they will buy 2+1=3 food items. (which is more than previous one i.e 2).
+
+Author(s):
+
+4★abhi_3568
+
+Editorial:
+https://discuss.codechef.com/problems/LOVWWE
+Tags:
+
+               
+                 abhi_3568, c-plus-plus, easy-medium
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-03-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

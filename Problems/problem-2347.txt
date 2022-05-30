@@ -1,0 +1,86 @@
+
+HKN held an ultimate Frisbee event a few weeks ago. To make it for fun, they decided to play a friendly game of Ultimate. You can find the rules here. Here are the relevant bits:
+
+A player cannot run with the disc—it may be moved only by passing.
+If a pass is incomplete, it is a "turnover" and the opposing team immediately gains possession.
+Each time the offense completes a pass in the defense's end zone, the offense scores a point.
+Ultimate is non-contact, meaning non-incidental (play-affecting or dangerous) physical contact is disallowed. Defenders cannot take the disc from an offensive player who has secured a catch
+
+There are two 5-player teams: Team1 and Team2. Assume one of the players has the disc. Help him decide which teammate to pass the disc to. A player is said to be free if no member of the opposing team is blocking the direct path of the disc from the holder to the teammate. Also, it is preferable to pass to a teammate closest to the opponent's end zone.
+Input:
+
+First line will contain TT, number of test cases. Then the test cases follow. 
+Each test case starts with a single number HH. This is the index of the player holding the ball. Obviously, if the index is greater than 5, a member of the second team is in possession of the ball. The next 10 lines have the format: nameixiyinameixiyi (space separated) denoting the name, and the location of players on the field in the form of cartesian coordinates.
+
+Output:
+For each test case, output in a single line denoting the name of the which player should the holder pass to. If all teammates are blocked by the opposing team, output TurnoverTurnover. If there are two or more players equally placed at a good location, pass to the player whose name is lexicographically greater than the others.
+Constraints
+
+1≤T≤201≤T≤20
+1≤H≤101≤H≤10
+0≤xi≤700≤xi≤70
+0≤yi≤400≤yi≤40
+
+Sample Input:
+1
+1
+Amberly 0 0
+Josh 22 10
+Dax 50 12
+Livia 26 14
+Caleb 40 30
+Lihao 12 8
+Mario 25 6
+Harshad 40 20
+Vivek 60 30
+Roger 30 30
+4
+JonBlake 8 58
+Akshay 30 30
+Aditya 30 10
+Thiagarajan 20 20
+Nikhil 27 54
+Jake 5 43
+Evan 13 41
+Kyle 7 46
+Andrew 40 62
+Brandon 30 4
+
+Sample Output:
+Caleb
+Akshay  
+EXPLANATION:
+The first team holds the positions:
+[(0,0)(22,10)(50,11),(30,40),(40,30)][(0,0)(22,10)(50,11),(30,40),(40,30)] and the second team members are standing at [(11, 5) (30, 10) (40, 20) (60, 30) (30, 30)]$.
+Player 1 (standing at (0, 0)) is holding the ball. She would love to pass the ball to player 3 (standing at 50 yards). But the second player of the opposing team ( at (25, 6)) is in the way so she opts for player 5 (40, 30). There is no one standing in the way. so the output is Caleb.
+For the second test case, Thiagarajan holds the ball. He can pass to both Akshay and Adityia. The program tells him to pass to Akshay since his name comes after Adityia's name in lexicographic order.
+
+Author(s):
+
+ashpazbashi
+
+Editorial:
+https://discuss.codechef.com/problems/PROB01
+Tags:
+
+               
+                 ashpazbashi, geometry
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+30-09-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, PAS fpc, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

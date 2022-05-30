@@ -1,0 +1,56 @@
+
+BinodBinod is giving chocolates to his three daughters.He has two chocolates boxes.One containsAA chocolates, and the other containsBB chocolates. He can thus give A chocolates,BB chocolates or A+BA+B chocolates to his daughters (He cannot open the boxes).
+Your task is to determine whether BinodBinod can give chocolates to his three daughters so that each of them can have the same number of chocolates.
+BinodBinod isis aa DumbDumb guyguy butbut famousfamous soso gogo andand helphelp him.him.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, two integers A,BA,B. 
+
+Output:
+For each test case if it is possible to give chocolates so that each of the three daughters can have the same number of chocolates, print YESYES; otherwise, print NONO.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤A,B≤1001≤A,B≤100
+
+Sample Input:
+2
+4 5
+1 1
+Sample Output:
+YES
+NO
+EXPLANATION:
+Sample 1- If BinodBinod gives nine chocolates, each of the three daughters can have three chocolates.
+Sample 2- Since there are only two chocolates, the three daughters cannot have the same number of chocolates no matter what BinodBinod gives to them.
+
+Author(s):
+
+3★dcpandey
+
+Editorial:
+https://discuss.codechef.com/problems/ZEN1
+Tags:
+
+               
+                 c, c-plus-plus, dcpandey, easy, uiet2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+7-08-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

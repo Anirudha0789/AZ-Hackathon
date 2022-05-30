@@ -1,0 +1,79 @@
+
+          
+            A man is trying to impress his wife by speaking few sentences to her. Whenever his wife smiles after the sentence, it means that she is impressed else if she doesn't smile then it means that she is not impressed. 
+
+Given a few sentences and the word "yes", if she smiles, or "no", if she doesn't, print how many words makes her smile. (quotes for clarity).
+
+Example: "you are pretty" doesn't make her smile. And "you are very pretty", makes her smile means the word "very" makes her smile.
+
+Note: If she smiles at a sentence, then it would guarantee that there would be at least one word in that sentence that is not there in sentences that doesn't make her smile.
+Input:
+Input starts with an integer T, the number of test cases.
+
+Each test case would have an integer S on a newline representing the number of sentences in that case. There would be S sentences after that, each on a newline, and between each sentence would be a word "yes" or "no" on a newline. Sentences would be words containing letters 'a' to 'z', inclusive, separated by single spaces. (Quotes for clarity).
+
+Output:
+Print the number of words that makes her smile for each case on a newline.
+Constraints:
+1<=T<=10
+1<=S<=5
+1<=characters in sentence<=100
+
+Example 
+Input:
+2
+2
+you are pretty
+yes
+you are
+no
+3
+how are you
+no
+how you
+no
+you are good
+yes
+
+Output:
+1
+1
+
+Explanation for example 1: She smiles at the word "pretty"
+            
+            
+            
+            
+            
+        
+
+        
+Author(s):
+
+3★chandubaba
+
+Editorial:
+https://discuss.codechef.com/problems/QM6P5A
+Tags:
+
+               
+                 brute-force, chandubaba, keteki, maths
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+5-02-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

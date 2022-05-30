@@ -1,0 +1,55 @@
+
+You are given the marks of student A and B out of 500.
+you have to calculate their percentage. if the percentage of student A is greater then B the print "A" without quotes else print "B".
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+For each testcase the first line contains an integer A&BA&B, denoting the total marks of student 
+A and student B.
+
+Output:
+For each testcase, output in a single line answer containing the name of student who scored more percentage.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤A,B≤1061≤A,B≤106
+
+Sample Input:
+3
+400 250
+320 499
+200 400
+Sample Output:
+A
+B
+B
+
+Author(s):
+
+4★abhi_3568
+
+Editorial:
+https://discuss.codechef.com/problems/COLLECT0
+Tags:
+
+               
+                 abhi_3568, c-plus-plus, easy
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+7-05-2021
+Time Limit:
+0.1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

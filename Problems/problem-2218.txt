@@ -1,0 +1,64 @@
+
+There are NN vacant rooms in chef’s hotel in each room maximum KK peoples can stay, there comes GG groups of peoples to stay in chef’s hotel, ithith group have PiPi members.     
+For each group you can allot one or more than one rooms as per their need but in a room member of same group can stay.
+A group stay in chef’s hotel if every member of their group gets room.
+Your task is to find maximum no. of groups that can stay in chef’s hotel.
+Input:
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of test cases follows.
+First line of each test case contains three space-separated integers   NN, KK and GG.
+Second line of each test case contains GG space-separated integers, P1,P2,P3,…,PGP1,P2,P3,…,PG.
+
+Output:
+
+For each test case print a single line containing, the maximum number of groups that can stay at chef’s hotel.
+
+Constraints
+
+1≤T≤101≤T≤10 
+1≤G≤1051≤G≤105
+1≤N≤1091≤N≤109
+1≤K≤1091≤K≤109
+1≤Pi≤1091≤Pi≤109
+
+Sample Input:
+1
+6 2 6
+4 1 3 2 9 7
+
+Sample Output:
+4
+
+Explanation:
+In this test case we have 66 vacant rooms and in each 22 members can stay,
+first group have 44 memebers so we have to allot 22 rooms for this group now, we have 44 vacant rooms. Next group have only 11 member so we will allot one room, now we have 33 vacant rooms. Similarly for group of 33 and 22 members we have to allot 22 and 11 rooms respactivly now there is no vacant rooms so other groups can not stay.
+
+Author(s):
+
+3★sahil_soni88
+
+Editorial:
+https://discuss.codechef.com/problems/D2C105
+Tags:
+
+               
+                 c-plus-plus, d2co2020, easy, sahil_soni88
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

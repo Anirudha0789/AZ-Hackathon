@@ -1,0 +1,64 @@
+
+
+  The description of this problem is extremely simple. You are given 2
+  non-intersecting circles in 3-dimensional world. Each of the circle is defined
+  by 3 non - collinear points lying on the circle. All you have to return is
+  whether the circles are entangled or not (just like two links of a chain). Two
+  circles are entangled if they cannot be separated from each other without
+  breaking any of the circles.
+  
+Input Format:
+
+  The first line contains a single integer, T, the number of test cases. Each of
+  the T test cases are defined by 2 lines. The first line of each test case
+  contains 9 integers representing the 3 points as (x1, y1, z1), (x2, y2, z2),
+  (x3, y3, z3) which define the first circle. Similarly, the second line for
+  each test case contains 9 integers representing the 3 points which define the
+  second circle.
+  
+Output Format:
+
+  For every query output "YES" without quotes if the circles are entangled and
+"NO" otherwise (quotes for clarity).
+  
+Constraints:
+
+  1 ≤ T ≤ 100
+-10000 ≤ Each Coordinate in the Input ≤ 10000
+
+Sample Input:
+1
+0 1 0 1 0 0 0 -1 0
+0 0 0 1 0 -1 1 0 1Sample Output:
+YES
+Problem Setter: Lalit Kundu
+
+Author(s):
+
+4★darkshadows
+
+Editorial:
+https://discuss.codechef.com/problems/CIRCLES
+Tags:
+
+               
+                 cdcrft14, darkshadows, geometry, hard
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+28-01-2014
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+Submit

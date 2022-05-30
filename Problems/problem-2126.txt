@@ -1,0 +1,80 @@
+
+You are given a tree with NN nodes rooted at node 11.
+The ithith node of the tree has a value AiAi assigned to it. 
+For the ithith node (1≤i≤N)(1≤i≤N), output the minimum value of bitwise XOR of the values of any two distinct nodes in the subtree of node ii.
+Formally, for each node ii, find the value of min(Ax⊕Ay)min(Ax⊕Ay), where x≠yx≠y and x,y∈x,y∈ subtree of node ii.
+Note that since leaf nodes have only 11 node in their subtree, output −1−1 for all the leaf nodes.
+Input Format
+
+First line will contain TT, number of test cases. Then the test cases follow.
+Each test case begins with a single line of input, an integer NN - the number of nodes in the tree.
+The following (N−1)(N−1) lines each contain two integers, UU and VV, denoting an undirected edge between nodes UU and VV.
+The last line of each test case contains NN integers. The ithith integer is the value assigned to ithith node.
+
+It is assured that the edges given in the input form a tree. 
+Output Format
+For each test case, output NN integers where the ithith integer is the minimum value of bitwise XOR of the values of any two distinct nodes in the subtree of node ii.
+If node ii is a leaf node, output −1−1 instead.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤N≤1051≤N≤105
+1≤U,V≤N1≤U,V≤N and U≠VU≠V
+0≤Ai≤10150≤Ai≤1015 
+It is guaranteed that the edges given in the input form a tree. 
+Sum of NN over all test cases does not exceed 105105.
+                        Sample Input 1
+                        
+
+2
+1
+10
+3
+1 2
+1 3
+4 5 6
+
+                        Sample Output 1
+                        
+
+-1
+1 -1 -1
+Explanation
+Test case 11: There is only one node in the tree which is a leaf node. Hence, the output is −1−1.
+Test case 22: The tree formed by the input of second test case is shown below:
+Nodes 22 and Node 33 are leaf nodes. Hence, the answer for them is −1−1. 
+For the subtree formed by node 11, the answer is min((4⊕5),(5⊕6),(4⊕6))min((4⊕5),(5⊕6),(4⊕6)) which is min(1,3,2)=1min(1,3,2)=1.
+
+
+Author(s):
+
+4★devendra7700
+
+Editorial:
+https://discuss.codechef.com/problems/NTA
+Tags:
+
+               
+                 Trees, Tries, DSU on Trees, Bitwise Operation
+                 
+                     
+                     Data Structures, Graphs, Advanced Data Structures, Advanced Algorithms, Advanced Graph Algos, Mathematics, Bit Manipulation
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2586
+Date Added:
+16-05-2022
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

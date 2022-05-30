@@ -1,0 +1,49 @@
+
+There are two rabbits on an x-axis ready to jump in the positive direction (i.e, toward positive infinity). The first rabbit starts at location x1 and moves at a rate of v1 feet  per jump. The second rabbit starts at location x2 and moves at a rate of v2 feet per jump. Given the starting locations and movement rates for each rabbit, can you determine if they'll ever land at the same location at the same time?
+Input:
+A single line of four space-separated integers denoting the respective values of
+x1,v1,x2 and v2..
+Output:
+Print YES if they can land on the same location at the same time; otherwise, print NO.
+Constraints
+Print YES if they can land on the same location at the same time; otherwise, print NO.
+Note :-   The two rabbits must land at the same location after making the same number of jumps.
+Sample Input:
+0 3 4 2
+Sample Output:
+YES
+EXPLANATION:
+The two rabbits jump through the following sequence of locations:
+0 -> 3 -> 6 -> 9 -> 12
+4 -> 6 -> 8 ->10 -> 12 
+Thus, the rabbits meet after 4 jumps and we print YES.
+
+Author(s):
+
+1★varghesebabu
+
+Editorial:
+https://discuss.codechef.com/problems/TNP604
+Tags:
+
+               
+                 c-plus-plus, help, varghesebabu
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+4-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

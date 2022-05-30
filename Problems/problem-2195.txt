@@ -1,0 +1,53 @@
+
+DK after winning the first match in this season having a pawri tonight. In the pawri he is calculating the next match’s predictive score and outcome to strategise very strongly for the next matches. Now he writes down each team’s next match’s unique score on the sheets along with his team score. Suddenly all the sheets fly away on the ground and get mixed with others’ similar sheets and so each team’s unique scores are now Penta-times written. But fortunately DK’s team’s next match’s unique score only written thrice . Now find out the total sum of those three scores then only Pawri will begin.  
+Input format:
+
+First-line will denote no. of test cases  
+Second-line will have an integer N total number scores written on all sheets  
+Next and third line will be given space separated N scores  
+
+Output format:
+Print the required sum in a single line  
+Constraints:
+1<=t<=20
+8<=N<=2*1e5
+1<=A[i]<=1e15  
+Sample Input:
+2
+8
+5 5 8 5 8 5 8 5
+13
+2 9 1 1 9 9 2 2 9 2 1 9 2  
+Sample Output:
+24
+3  
+
+Author(s):
+
+3★avishake_maji
+
+Editorial:
+https://discuss.codechef.com/problems/IPLPAWRI
+Tags:
+
+               
+                 avishake_maji, c-plus-plus, number-theory
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+12-04-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

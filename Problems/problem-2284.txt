@@ -1,0 +1,70 @@
+
+An un-ordered triplet of circles (C1,C2,C3)(C1,C2,C3) is called beautifulbeautiful if they satisfy the following property:
+Two of the circles in the triplet intersect at exactly 22 points, and the other circle passes through 44 points: 
+
+Centres of the two intersecting circles
+Points of intersection of the two circles
+
+You are given N circles. Find the total number of beautiful triplets(Ci,Cj,CkCi,Cj,Ck). (two triplets are different if atleast one of i, j, k in one triplet is not present in the other triplet).
+Example: (C1,C2,C3)(C1,C2,C3) is same as (C1,C3,C2)(C1,C3,C2) but different from (C1,C2,C4)(C1,C2,C4)
+Input Format:
+
+First line contains a single integer TT, the number of test cases.
+TT testcases follow. 
+The ithith test case begins with the integer NN, number of circles.
+Next NN lines each contain three integers X,Y,RX,Y,R, where (X,Y)(X,Y) is the coordinate of center and RR is the radius of the ithith circle.
+
+Output Format:
+For each test case output a single integer in a newline which is the number of beautiful triplets.
+Constraints:
+
+1≤T≤151≤T≤15
+3≤N≤1033≤N≤103
+0≤X,Y≤1060≤X,Y≤106
+1≤R≤1061≤R≤106
+
+Sample Input:
+1  
+4  
+0 0 8  
+0 10 6   
+0 5 5   
+0 0 8
+
+Sample Output:
+2
+
+Explanation:
+The triplets (C1, C2, C3) and (C4, C2, C3) satisfy the condition.
+In (C1, C2, C3), C3 passes through the center of C1 and C2 and also through the intersection points of C1 and C2.
+Note: Same circles might exist in the input.
+
+Author(s):
+
+5★dj_r_1
+
+Editorial:
+https://discuss.codechef.com/problems/BEACIRC
+Tags:
+
+               
+                 dem2020, dj_r_1, geometry
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+19-06-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,88 @@
+
+Avengers need all the five infinity stones to rectify their mistakes. To retrieve the infinity stones from different timelines, they have divided the work and all are on their way.
+
+Natasha and Clint decided to bring soul stone which they will get from Vormir. When they reached Vormir, they came to know that in order to get the soul stone, one of them needs to sacrifice their life. They both wanted to sacrifice their life and Clint knows that he cannot stop Natasha with his combat skills so he decided to give a problem to Natasha. She is so determined that she cannot miss the chance to sacrifice herself to save the entire world, which is why she needs your help to solve this problem.
+
+Given a coordinate (X,Y)(X,Y) in an infinite 2-D grid. You have to answer QQ queries.
+Each query can be of two types:
+
+++ aa bb : add aa to the current xx coordinate and bb to the current yy coordinate.
+−− aa bb : subtract aa to the current xx coordinate and bb to the current yy coordinate.
+
+After each query, you have to calculate the number of good rectangles that could be formed in the grid.
+
+A Good rectangle has the following three properties:
+
+Both the end coordinates of anyone diagonal of good rectangle should lie on the straight line joining (0,0)(0,0) and (X,Y)(X,Y).
+The coordinates of the chosen diagonal should be positive. 
+Let’s say, (x1,y1)(x1,y1) and (x2,y2)(x2,y2) are the two end diagonal coordinates that lie on the straight line, then they should satisfy the below equation:
+⌊x1⌋/⌈x1⌉+⌊y1⌋/⌈y1⌉+⌊x2⌋/⌈x2⌉+⌊y2⌋/⌈y2⌉=4⌊x1⌋/⌈x1⌉+⌊y1⌋/⌈y1⌉+⌊x2⌋/⌈x2⌉+⌊y2⌋/⌈y2⌉=4 
+
+Note: It is ensured that the coordinates are always positive.
+Note: It is ensured that the number of good rectangles are always less than 1e18.
+Input Format
+
+First line of input contains X,YX,Y. The current coordinates in the infinite 2-D grid.
+Next line of input contains QQ, the number of queries you have to answer.
+The next QQ lines contain three values t,a,bt,a,b. Where tt is either ‘+’ or ‘-’ and aa and bb are the values by which current coordinates will update.
+
+Output Format
+For each query, you have to print the number of good triangles that could be formed.
+Constraints
+
+1≤X,Y≤1091≤X,Y≤109
+1≤Q≤1051≤Q≤105
+0≤a,b≤1040≤a,b≤104
+                        Sample Input 1
+                        
+
+3 2
+3
++ 3 1
+- 4 0
++ 2 3
+
+                        Sample Output 1
+                        
+
+3
+0
+1
+Explanation
+
+In the given Input, The initial coordinates are (3,2).  
+In query 1, the coordinates will become (6,3). Total 3 good rectangles can be formed and they are (ABEF, ACIG, EDIH).
+In query 2, the coordinates will become (2,3). Total 0 good rectangles can be formed.
+In query 3, the coordinates will become (4,6). Total 1 good rectangle can be formed which is GHJI.
+
+Author(s):
+
+5★mr_cchef
+
+Tester:
+5★mr_cchef
+Editorial:
+https://discuss.codechef.com/problems/ENDGAME22
+Tags:
+
+               
+                 geometry, mr_cchef, number-theory
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+15-03-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

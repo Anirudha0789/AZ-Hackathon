@@ -1,0 +1,67 @@
+
+As Felicity is online, the FCs have decided to give an aerial view of the campus using drones. They put Sigma in charge of placing the drones over the campus. As Sigma had multiple jobs to handle for Felicity, he placed the drones hurriedly and it so ended up that the view of many of the drones intersected.
+When the drone placing was presented to G, G disliked that there were drones who's view was completely contained inside the view of another drone.
+He decided to remove some drones in order to avoid this. However, he knows that if he removes too many drones, Sigma will get upset.
+Help G remove the least number of drones in such a way that no drone's view is a proper subset of another drone's view.
+Each drone's view is a circle defined by a centre and a radius on the Cartesian plan.
+NOTE: Since G is a real pr0 at coding, his code is flawless. That is to say, the buggy solution only has a logical error.
+Input
+
+The first line of each testcase contains a single integer NN, the number of drones
+The next NN lines of each testcase contain 3 integers, RiRi, CxiCxi and CyiCyi denoting the radius and the centre of the ithith drone's range, respectively
+No two drone ranges will have both their coordinates as well as their radius equal. That is to say, no two drone ranges will be identically overlapping.
+
+Output
+Print a single line containing an integer - the size of the largest subset of drones that can be chosen as per the requirements mentioned in the problem.
+Constraints
+
+2≤N≤1002≤N≤100
+1≤Ri≤1021≤Ri≤102
+|Cxi|,|Cyi|≤109|Cxi|,|Cyi|≤109
+
+Sample Input
+4
+10 0 0
+2 1 0
+4 50 50
+4 51 51
+
+Sample Output
+3
+
+Explanation
+Removing either the first or the second circles satisfies our condition.
+Note that the 3rd and 4th circle intersect but none of them fully encloses the other. Hence, they can both remain.
+Hack case note
+Find the buggy solution to this problem on GitHub or Drive.
+This problem is part of DeCode contest, wherein you are given a problem (as given above) and its buggy solution (link in contest announcement). You have to submit a program that outputs a hack case to the buggy solution. Your program's output should satisfy the input constraints of the above problem. 
+
+Author(s):
+
+4★kjain1810
+
+Editorial:
+https://discuss.codechef.com/problems/ENCCIRC
+Tags:
+
+               
+                 geometry, kjain1810
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+12-02-2021
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

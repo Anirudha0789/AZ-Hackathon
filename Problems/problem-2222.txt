@@ -1,0 +1,72 @@
+
+Jon and his friend are playing Rock, Paper and Scissors.
+It is known that they played NN rounds in which Geek played R1R1 times rock, P1P1 time paper and S1S1 times scissors and his friend played R2R2 times rock, P2P2 time paper and S2S2 times scissors. In each round, his friend plays first.
+Given N,R1,P1,S1,R2,P2N,R1,P1,S1,R2,P2 and S2S2, find out if Jon can win the game if he plays optimally. To win he should win atleast ceil(N/2)ceil(N/2) rounds. A draw is not considered a win.
+Note that in rock-paper-scissors - rock beats scissors, paper beats rock and scissors beat paper.
+Input Format
+
+The first line of the input contains a single integer TT denoting the number of test cases.The description of T test cases follows.
+The first line of each test case contains one integer NN.
+The second line of each test case contains three space-separated integers R1R1, P1P1 and S1S1.
+The third line of each test case contains three space-separated integers R2R2, P2P2 and S2S2.
+
+Output Format
+For each test case, print the "Yes" (without quotes) if Jon can win or "No" (without quotes) otherwise.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤N,R1,P1,S1,R2,P2,S2≤1091≤N,R1,P1,S1,R2,P2,S2≤109
+R1+P1+S1=R2+P2+S2=NR1+P1+S1=R2+P2+S2=N
+                        Sample Input 1
+                        
+
+2
+3
+1 1 1
+1 1 1
+10
+8 1 1
+6 3 1
+
+                        Sample Output 1
+                        
+
+Yes
+No
+Explanation
+Test Case 1: When his friend will play paper, 
+Jon will play scissors then when his friend 
+will play rock, Jon will play paper and when 
+his friend will play scissors, Jon will play 
+rock. Jon can win 33 rounds, hence he can win 
+the game. 
+
+Author(s):
+
+4★sayan_kashyapi
+
+Editorial:
+https://discuss.codechef.com/problems/JONRPS
+Tags:
+
+               
+                 c-plus-plus, conditional-statement, game-theory, sayan_kashyapi, simple-easy
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+11-08-2021
+Time Limit:
+0.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, PYPY, NODEJS, PHP, kotlin, JS, R, swift, SQL, NICE
+
+Submit

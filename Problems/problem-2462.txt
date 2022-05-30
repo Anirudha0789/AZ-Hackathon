@@ -1,0 +1,93 @@
+
+There is a binary string SS. Alice and Bob are playing a game on it.
+Each turn, the following happens:
+
+Alice selects a 0101 subsequence in SS and removes it from SS. (a 0101 subsequence is a length 22 subsequence whose first character is 00 and second character is 11)
+Bob selects a 0101 subsequence in SS and removes it from SS.
+After both players have moved, the turn is called completed and Alice scores 11 point. Then, the next turn begins.
+
+If either player is unable to move (there isn't any 0101 subsequence left in SS), that turn ends immediately and the game ends.
+Alice tries to maximize her points, while Bob tries to minimize Alice's points. Find how many points Alice would score if both players play optimally.
+Input Format
+
+The first line contains a single integer TT — the number of test cases. 
+Each of the next TT lines contains a binary string SS.
+
+Output Format
+For each test case, output on a new line a single integer — Alice's score when both players play optimally.
+Constraints
+
+1≤T≤2⋅1051≤T≤2⋅105
+The sum of |S||S| across all tests doesn't exceed  2⋅1052⋅105
+
+Subtasks
+
+Subtask 1 (25 Points):
+The sum of |S||S| across all tests doesn't exceed 100100
+Subtask 2 (25 Points):
+The sum of |S||S| across all tests doesn't exceed 15001500
+Subtask 3 (50 Points):
+No further constraints.
+                        Sample Input 1
+                        
+
+4
+01010101
+0101
+10
+01001011
+
+                        Sample Output 1
+                        
+
+1 
+1 
+0 
+2 
+Explanation
+In the first example, this is one of the possible outcomes.
+Turn 11:
+
+Alice removes subsequence (1,2)(1,2) from SS, so SS becomes 010101.
+Bob removes subsequence (3,6)(3,6) from SS, so SS becomes 0110.
+Alice scores one point and the first turn ends.
+
+Turn 2:
+
+Alice removes subsequence (1,2)(1,2) from SS, so SS becomes 10.
+Bob has nothing to do, so the game ends immediately.
+
+Thus, Alice has one point in total.
+
+Author(s):
+
+dannyboy1204
+
+Editorial:
+https://discuss.codechef.com/problems/BSG
+Tags:
+
+               
+                 Greedy, DFS
+                 
+                     
+                     Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+4015
+Date Added:
+11-05-2022
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

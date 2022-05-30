@@ -1,0 +1,66 @@
+
+You are given an array A[1……N] of length N.Your task is to find the number of K length subarrays
+such that average of the subarray is greater than or equal to the median value of that subarray in
+sorted format. Also the median and average must both be prime or non prime.
+Median of an even length subarray would be the value at the smaller index of the two.
+For eg: Median of {2,3,4,5} would be 3, not 4.
+Consider the integer(floored) value of average for calculations.
+You have to answer T independent test cases.
+INPUT FORMAT:
+First line contains the length of the array N and length of subarray K.
+Second line contains the elements of the array A[i].
+OUTPUT FORMAT:
+Print the count(>=0) of K length subarrays following the above condition.
+CONSTRAINTS:
+1<=T<=10
+1<=N<=10^5
+1<=K<=N
+2<=A[i]<=10^5
+SAMPLE INPUT:
+1
+5 3
+2 4 3 5 6
+SAMPLE OUTPUT:
+2
+EXPLANATION:
+N = 5, K = 3
+First subarray :
+{2,4,3} in sorted format is {2,3,4}. Therefore median is 3 and average is (2+4+3)/3 = 3.
+Hence median and average are both prime and average >= median. So count is increased by one.
+Second subarray :
+{4,3,5} in sorted format is {3,4,5}. Therefore median is 4 and average is (4+3+5)/3 = 4.
+Hence median and average are both non prime and average >= median. 
+So count is increased by one.
+Third subarray :
+{3,5,6} in sorted format is {3,5,6}. Therefore median is 5 and average is (3+5+6)/3 = 4.
+Hence average < median so count is not increased.
+
+Author(s):
+
+3★tejasdeore7
+
+Editorial:
+https://discuss.codechef.com/problems/AVGMED
+Tags:
+
+               
+                 c-plus-plus, logi2020, merge-sort-tree, policy-based-data-structure, sieve, tejasdeore7
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+7-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

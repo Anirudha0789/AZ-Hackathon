@@ -1,0 +1,59 @@
+
+Chef is obsessed with numbers and want to do some operation with it. So he took some random series AA of positive integers of size NN and did AND of ANDs among them, i.e. find the AND of all possible 
+subarrays of AA and then the AND of all these results. If the final result is XX,print XX if 
+GCDGCD(X,1000000007X,1000000007) is 11 else print -11.
+AND of ANDs of [1,2,3] is
+(1) andand (1 andand 2) andand (1 andand 2 andand 3) andand (2) andand (2 andand 3) andand (3) 
+Input:
+
+The first line of input contains a single integer TT denoting the number of test cases.
+The description of TT test cases follows. 
+The first line of each test case contains a single integer NN.
+The second line contains N space separated integers A1A1,A2A2,…..,ANAN.
+
+Output:
+For each test case, print a single line containing one integer -- the corresponding result as mentioned above.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N≤1051≤N≤105
+1≤Ai≤1081≤Ai≤108
+
+Sample Input:
+1
+3
+
+1 2 3
+Sample Output:
+-1
+
+
+Author(s):
+
+3★dshahid380
+
+Editorial:
+https://discuss.codechef.com/problems/AOA
+Tags:
+
+               
+                 bitwise-operation, dshahid380, greatest-common-divisor
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-10-2018
+Time Limit:
+1 - 3 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,64 @@
+
+You are given a convex polygon PP with vertices P0,P1,…,Pn−1P0,P1,…,Pn−1, each having integer coordinates. On each edge PiP(i+1)%nPiP(i+1)%n of the polygon, choose a point RiRi uniformly at random. What is the expected area of the convex hull of these nn chosen points R0,R1,…Rn−1R0,R1,…Rn−1 ?
+Note
+
+Consider the area of the convex hull as zero if it contains less than 3 vertices.
+All the points RiRi are chosen independently of each other.
+Your answer is considered correct if and only if its absolute or relative error doesn't exceed 10−610−6.
+
+Input
+
+The first line contains nn, the number of vertices in the convex polygon.
+The next nn lines contain the coordinates of the vertices of the polygon in anti-clockwise order. 
+
+Output
+For each testcase, print the expected area of the convex hull of the nn randomly chosen points.
+Constraints
+
+3≤n≤1053≤n≤105
+The absolute values of all the coordinates ≤107≤107.
+All the points in the input are distinct.
+The described polygon PP is convex and the vertices of the polygon are given in anti-clockwise order. Also, no three vertices of the polygon are collinear.
+
+Example Input
+3
+0 0
+1 0
+0 1
+
+Example Output
+0.1250000000
+
+
+Author(s):
+
+7★jtnydv25
+
+Editorial:
+https://discuss.codechef.com/problems/EAREA
+Tags:
+
+               
+                 Cartesian Coordinate System, Geometry, Expected Value, Observation
+                 
+                     
+                     Mathematics, Probability, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+12-12-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

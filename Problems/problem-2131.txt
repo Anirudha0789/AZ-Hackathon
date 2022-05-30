@@ -1,0 +1,58 @@
+
+
+Vijay is a very intelligent guy. To check his intelligence his teacher asked him a question and expects him to solve it as efficiently as possible, but since Vijay wants to spend some time with his girlfriend we asks for your help to solve it. Do remember his teacher will only reward him if the solution meets his expectations. 
+
+You are given an integer N. Find the sum of Bitwise-Or of all ordered pairs (i,j):{1<=i,j<=N}. As the answer may be large compute it to modulo 10^9+7.
+
+Input
+The first line of the input contains a single integer T denoting the number of test cases.
+Each test case contains a single integer N.
+
+Output
+For each test case print the required sum modulo 10^9+7.
+Constraints
+
+1 <= T <= 100000
+1 <= N <= 1000000000
+
+Example
+Input:
+1
+2
+
+Output:
+9
+
+Explanation
+1|1+1|2+2|1+2|2=9
+
+
+Author(s):
+
+6★himkha_100
+
+Editorial:
+https://discuss.codechef.com/problems/COWA19A
+Tags:
+
+               
+                 bitwise-operation, cowr2020, himkha_100
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+15-01-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,50 @@
+
+Archie wants to print the set of numbers in the A4 sheet for his college activity. So he types the array of size NN in his desktop accordingly, but the printer prints the numbers in the reverse order. Archie finds out that his printer has some amount of fault and is curious why is that happening!! So he writes some code exactly how printer is reversing the numbers!! can you do the same…?
+
+Input:
+The first line contains an integer, NN, denoting the size of the array. The next line contains  NN space-separated integers denoting the elements of the array.
+Output:
+Output the reversed array NN which is space separated.
+
+Constraints
+
+1≤N≤10001≤N≤1000
+1≤arri≤10001≤arri≤1000,where arriarri is the ithith element of the array
+Sample Input:
+4
+1 2 3 4
+
+Sample Output:
+4 3 2 1
+EXPLANATION:
+Given array, arr=[1,2,3,4]arr=[1,2,3,4]. after reversing the array, arr=[4,3,2,1]arr=[4,3,2,1]
+
+Author(s):
+
+1★amruta_p
+
+Editorial:
+https://discuss.codechef.com/problems/PRINT21
+Tags:
+
+               
+                 amruta_p, c-plus-plus, nyre2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+27-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,53 @@
+
+Chef is very busy now-a-days. So, he has given you a task to  find the total count of all the number starting from 1 to n which are co-primes with n . For eg:- if y = 7 then there are 6 numbers which are co-primes with 7 . The numbers are 1, 2, 3, 4, 5, 6 .
+Note:- a is co-prime with b means gcd (a, b) = 1.  
+Constraints:
+1 <= t <= 100
+1 <= n <= 10^6
+Input:
+The first line contains a single integer t which denotes no of test cases. (1 <= t <=100) 
+The second line contains a single integer n which denotes the range. (1 <= n <= 10^6).
+Output:
+Print the total count of all the numbers starting from 1 to n which are co-primes with n in the single line.  
+Example : 1
+Input:
+1
+7
+Output:
+6
+Example-2
+Input:
+1
+5
+Output:
+4
+Explanation:
+Total 4 numbers are there which are co-primes with 5. The numbers are 1, 2, 3, 4. 
+
+Author(s):
+
+4★carpe_diemist
+
+Tags:
+
+               
+                 c-plus-plus, carpe_diemist, euler-totient-funtion, number-theory
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+28-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

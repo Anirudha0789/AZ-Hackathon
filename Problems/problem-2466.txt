@@ -1,0 +1,73 @@
+
+There are NN hill stations numbered from 00 to N−1N−1, all the stations have some fixed elevations and are connected with every other station directly or indirectly via roads. The roads are bidirectional and there is some cost associated with each of these roads.
+Roads are given in the format [uu, vv, ww] which denotes that there is a road between station uu and station vv with cost ww.
+A path is a sequence of stations [S0S0, S1S1, S2S2, ………… SKSK] such that S0S0 is the starting station and SKSK is the destination station and there is a road between every SiSi & Si+1Si+1, where 0≤i≤K−10≤i≤K−1.
+Your task is to find the number of easy paths from station 00 to station N−1N−1. Easy path is a path that satisfies: elevation(SiSi) > elevation(Si+1Si+1) for 0≤i≤K−10≤i≤K−1. 
+Elevation of a station is defined as the minimum cost of this station from station no. N−1N−1.
+Since that number may be too large, print it modulo 109109 + 77.
+
+Input:
+
+First-line will contain TT the number of test cases.
+The first line of each test case line will contain two integers, NN the number of hill stations, and EE the number of roads.
+Next EE lines will contain three integers uu, vv & ww, representing a road between uu and vv with cost ww.
+Output:
+For each test case, output in a single integer representing the number of easy paths from station 00 to station N−1N−1 modulo 109109 + 77.
+
+Constraints
+
+1≤T≤101≤T≤10
+2≤N≤1042≤N≤104
+N−1≤E≤min(4∗104,N∗(N−1)/2)N−1≤E≤min(4∗104,N∗(N−1)/2)
+0≤u,v≤N−10≤u,v≤N−1
+1≤w≤1051≤w≤105
+Subtasks
+
+ Subtask #1 (30 points) : N≤20N≤20
+ Subtask #2 (70 points) : N≤104N≤104
+Sample Input:
+    1
+    6 7
+    0 1 7 
+    1 4 6 
+    1 2 4 
+    2 3 3 
+    2 5 10
+    3 5 1
+    3 4 2
+Sample Output:
+    3
+EXPLANATION:
+
+Easy Paths:
+[0, 1, 2, 5], [0, 1, 2, 3, 5], [0, 1, 4, 3, 5] 
+
+Author(s):
+
+pec_chapter
+
+Editorial:
+https://discuss.codechef.com/problems/EPATHS
+Tags:
+
+               
+                 depth-first-search, dijkstra-algorithm, dynamic-programming, pec_chapter, ucsp2021
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+31-03-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

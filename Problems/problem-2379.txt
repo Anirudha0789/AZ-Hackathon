@@ -1,0 +1,96 @@
+
+You are given a rooted tree consisting of nn vertices numbered 11 to nn.
+The root of the tree is vertex number 11.
+You are given QQ queries. The  ii-th query consists of a set of kk distinct vertices.
+In each query, you have to find the Godfather node. A Godfather node is a node in the given set which lies in the unique simple paths from all the kk vertices to the root.   
+Input:
+
+First-line will contain 22 integers nn and QQ.   
+Next, n−1n−1 lines contain two integers uu and vv describing an edge of the tree.
+Next QQ lines describe queries.
+ii-th query starts with an integer kk - number of integers in the current query. Then kk integers from which you have to find the godfather. 
+
+Output:
+For each query, print a single line containing one integer - The godfather node if it exists, else −1−1.
+Constraints
+
+1≤n≤2000001≤n≤200000
+1≤Q≤20001≤Q≤2000
+1≤k≤20001≤k≤2000
+
+Sample Input 1:
+10 5
+1 2
+1 3
+1 4
+2 5
+2 6
+3 7
+7 8
+7 9
+9 10
+4 3 7 9 10
+2 5 6
+3 3 8 10
+3 7 4 1
+5 10 9 8 7 1   
+Sample Output:
+3
+-1
+3
+1
+1  
+Sample Input 2:
+5 2
+1 2
+1 3
+2 4
+3 5
+5 1 2 3 4 5
+1 2   
+Sample Output:
+1
+2       
+EXPLANATION:
+Sample 1: query 1.
+Paths.
+Root to vertex 33 [1,3][1,3]
+Root to vertex 77 [1,3,7][1,3,7]
+Root to vertex 99 [1,3,7,9][1,3,7,9]
+Root to vertex 1010 [1,3,7,9,10][1,3,7,9,10]
+Here vertex 33 lies in the paths from vertices 3, 7,9 and 10 to root.
+So vertex 33 is the godfather node.
+Sample 1:Query 2.
+Root to vertex 55 [1,2,5][1,2,5]
+Root to vertex 66 [1,2,6][1,2,6]
+No godfather node exists from given kk integers.
+
+Author(s):
+
+6★kkdrummer
+
+Editorial:
+https://discuss.codechef.com/problems/COW3D
+Tags:
+
+               
+                 cow42020, depth-first-search, kkdrummer, trees
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

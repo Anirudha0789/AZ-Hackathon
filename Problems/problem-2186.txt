@@ -1,0 +1,50 @@
+
+Given an integer,N , traverse its digits (d1,d2,…,dn) and determine how many digits evenly divide N  (i.e.: count the number of times N divided by each digit di has a remainder of 0 ). Print the number of evenly divisible digits.
+Note: Each digit is considered to be unique, so each occurrence of the same evenly divisible digit should be counted (i.e.: for N=111, the answer is 3).
+Input:
+The first line is an integer, T, indicating the number of test cases.
+The  subsequent lines each contain an integer, N.
+Output:
+For every test case, count and print (on a new line) the number of digits in N that are able to evenly divide N.
+Constraints
+1 ≤ T ≤ 15
+0 < N < 10^9
+Sample Input:
+   2
+   12
+   1012
+
+Sample Output:
+   2
+   3
+
+
+Author(s):
+
+1★varghesebabu
+
+Editorial:
+https://discuss.codechef.com/problems/TNP603
+Tags:
+
+               
+                 c, help, varghesebabu
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+4-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

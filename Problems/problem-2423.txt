@@ -1,0 +1,85 @@
+
+ Dhinchak was returning from the National Institute of Autism after giving a lecture about the "Science of being a fool and making everyone fools", when she came up with a coding question. She immediately called her friends in order to discuss the question.  
+ You have an unweighted tree containing N vertices, i.e., there are a total of N-1 edges in the tree.  The root of the tree is 1.  You are given an initial array and a target array, each consisting of N values. 
+  The arrays are composed of 0s and 1s only.  
+ The initial array denotes the initial value of each vertex in the tree, while the target array denotes the target value for the same vertex of that tree. 
+ The aim of the problem is to convert the value of each vertex to its target value, by performing the following operation : 
+ Pick a node x, and when this is done, the value of x gets flipped, the value of the immediate children of x remains unchanged, the value of the grandchildren of x gets flipped, the value of the great-grandchildren remain unchanged and so on,
+ until the entire subtree of X is processed 
+
+Find the minimum number of operations (it might be 0 as well!) needed in order to make sure that each vertex has its value as the target value 
+Input
+ The input consists of N , the number of vertices in the tree. Then , N-1 edges follow, each consisting of two integers U and V, indicating that there is an edge between vertex U and vertex V. 
+The following line consists of N numbers, either 0 or 1 , denoting InitialValuei , i.e., initial value of ith vertex.
+The next line consists of N numbers, either 0 or 1, denoting TargetValuei, i.e., target value of ith vertex.
+
+Output
+ Print the minimum number of moves needed in one line. 
+Constraints
+ 1 <= N <= 100000 
+ U!=V 
+ 1<=U<=N 
+ 1<=V<=N 
+ 0 <= InitialValuei <= 1 
+ 0 <= TargetValuei <= 1 
+Example 1
+Input:
+3
+1 2
+3 1
+1 0 0
+0 0 0
+
+Output:
+1
+
+ 
+Explanation
+ The tree is rooted at 1, and has two children 2 and 3. If we perform the given operation on vertex 1, its value becomes equal to its target value, while its immediate childrens' values remain unchanged. Hence minimum number of operations required is equal to 1. 
+Example 2
+Input:
+3
+1 2
+2 3
+1 0 1
+0 1 0
+
+Output:
+2
+
+ 
+Explanation
+ The tree is rooted at 1, and has a children 2 and grandchildren 3. If we perform the given operation on vertex 1, the value of vertex 1 and 3 
+becomes equal to their target value. This is because 3 is a grandchildren of 1. Next, we perform the operation again on vertex 2, to make its 
+value equal to target value of 2. Thus, the minimum number of operations required is equal to 2.
+
+
+Author(s):
+
+5★akshayvenkat97
+
+Editorial:
+https://discuss.codechef.com/problems/TREEEE
+Tags:
+
+               
+                 akshayvenkat97, depth-first-search, easy-medium, popc2018, xor
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+14-01-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

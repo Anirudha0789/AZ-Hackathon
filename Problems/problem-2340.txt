@@ -1,0 +1,92 @@
+
+Read problems statements in Hindi, Spanish, Mandarin chinese, Russian, Vietnamese and Bengali as well.
+Ada has a farm in the shape of a convex polygon. For simplicity, the vertices of the polygon are numbered 11 through NN in clockwise order.
+There are many cows living on the farm. Cows fight often, so Ada wants to divide the farm into separate regions using fences to prevent accidents. Each fence can be considered a line segment.
+Ada is worried about the free space available for each cow, so she needs to know the area of the region inhabited by a particular cow sometimes. As her apprentice, your task is to perform QQ queries. There are two types of queries:
+
+1uv1uv: Build a fence between vertices uu and vv. It is guaranteed that this fence does not intersect any previously built fence (but they may have common endpoints).
+2xy2xy: Find the area of the region inhabited by a cow at position (x,y)(x,y). Sometimes, the point may lie on a fence (the cow is trying to cross the fence); it may also be outside the farm or on its border (the cow is escaping!). In these cases, the area is 00.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and QQ.
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains two space-separated integers xx and yy denoting the coordinates of the ii-th vertex.
+Each of the next QQ lines contains three space-separated integers describing a query in the above format.
+
+Output
+For each query of the second type, print a single line containing one real number with exactly one decimal place — the area of the given region.
+Constraints
+
+1≤T≤41≤T≤4
+3≤N≤1053≤N≤105
+1≤Q≤1051≤Q≤105
+the sum of NN over all test cases does not exceed 3⋅1053⋅105
+the sum of QQ over all test cases does not exceed 3⋅1053⋅105
+1≤u,v≤N1≤u,v≤N
+0≤x,y≤2⋅1090≤x,y≤2⋅109
+no three vertices are collinear
+                        Sample Input 1
+                        
+
+1
+6 5
+5 0
+3 0
+0 3
+2 5
+6 5
+8 3
+2 3 1
+1 4 1
+2 3 1
+1 4 6
+2 6 4
+
+                        Sample Output 1
+                        
+
+27.0
+11.0
+4.0
+Explanation
+Example case 1:
+
+The farm is a hexagon as depicted in the picture above. The queries are as follows:
+
+Query on point GG, the answer is the area of the hexagon.
+Add fence ADAD, the farm is split into two regions.
+Again a query on point GG, the answer is the area of region ABCDABCD.
+Add fence DFDF, the farm is split into three regions in total.
+Query on point HH, the answer is the area of region DEFDEF.
+
+
+Author(s):
+
+7★alei
+
+Editorial:
+https://discuss.codechef.com/problems/ADAFARM
+Tags:
+
+               
+                 alei, centroid-decomposition, cook99, disjoint-set-union, geometry, hard, implementation, taran_1407
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+9999
+Date Added:
+31-08-2018
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

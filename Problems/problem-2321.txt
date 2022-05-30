@@ -1,0 +1,91 @@
+
+Sometimes is difficult to guess all angles of Triangle when the sides are given. 
+Let’s make this task simple,
+Your task is to find the remaining two angles of Isosceles triangle when any one angle of triangle and isosceles sides of triangle are given.
+
+Hence total 99 type of queries are possible: - 
+1> Side ABAB, ACAC are isosceles and angle(A)angle(A) is given.
+2> Side ABAB, ACAC are isosceles and angle(B)angle(B) is given. 
+3> Side ABAB, ACAC are isosceles and angle(C)angle(C) is given. 
+4> Side ABAB, BCBC are isosceles and angle(A)angle(A) is given.
+5> Side ABAB, BCBC are isosceles and angle(B)angle(B) is given.
+6> Side ABAB, BCBC are isosceles and angle(C)angle(C) is given.
+7> Side ACAC, BCBC are isosceles and angle(A)angle(A) is given.
+8> Side ACAC, BCBC are isosceles and angle(B)angle(B) is given.
+9> Side ACAC, BCBC are isosceles and angle(C)angle(C) is given. 
+NOTE:−NOTE:− All Angles are in degrees. 
+NOTE:−NOTE:− Sometime it may possible that triangle may not formed under the given constraints at that time simply print −1−1.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+The first line of each test case contains two space-separated integers type of query from 9 listed above denoting QQ, and AngleAngle.
+
+NOTE:−NOTE:− INPUTEDINPUTED angleangle alwaysalways inin integralintegral NumberNumber denotesdenotes thethe angleangle inin degreesdegrees.
+Output:
+For each test case print two space separated numbers denoting the remaining two angles in degrees if it’s possible to formed the triangle.
+Elsewhere print −1−1 if it’s impossible to formed a triangle within given constraints.  
+NOTE:−NOTE:− Remaining angles are printed in Clocked Wised Direction.
+If angle(A)angle(A) as input then print angle(B)angle(B) then angle(C)angle(C). 
+If angle(B)angle(B) as input then print angle(C)angle(C) then angle(A)angle(A). 
+If angle(C)angle(C) as input then print angle(A)angle(A) then angle(B)angle(B).
+Constraints
+
+1≤1≤ TT ≤105≤105
+1≤1≤ QQ ≤9≤9
+1≤1≤ AngleAngle ≤179≤179
+
+Subtasks
+
+40 points : 11 ≤≤ AngleAngle ≤≤ 8989
+60 points : OriginalOriginal Constraints.Constraints.
+
+Sample Input:
+    5
+    2 84
+    1 33
+    1 60
+    7 30
+    2 175
+
+Sample Output:
+    84 12
+    73.5 73.5
+    60 60
+    30 120
+    -1
+
+EXPLANATION:
+
+Example−case−3:Example−case−3: This is case of equilateral triangle. Every Equilateral triangle is isosceles triangle. All the angle with 60.
+Example−case−5:Example−case−5: In this cases we don't able to satisfy the triangle property. ang(a)+ang(b)+ang(c)=180ang(a)+ang(b)+ang(c)=180.
+
+
+Author(s):
+
+4★mann2108
+
+Editorial:
+https://discuss.codechef.com/problems/LIKTRI
+Tags:
+
+               
+                 easy, geometry, mann2108, triangle
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+16-02-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

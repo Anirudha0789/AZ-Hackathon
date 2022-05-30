@@ -1,2 +1,510 @@
-['https://www.codechef.com/problems/BCLGSUBH', "\nRead problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.\nPantelija was given a sequence of positive integers a1,a2,…,aNa1,a2,…,aN. Let's define the gcd value of this sequence as the number of its non-empty contiguous subsequences with greatest common divisor strictly greater than 11. The greatest common divisor of any contiguous subsequence al,al+1,…,aral,al+1,…,ar (1≤l≤r≤N1≤l≤r≤N) is the greatest positive integer which divides each element of this subsequence.\nPantelija wants to maximise the gcd value of this sequence. In order to do that, he may choose a valid index ii, an integer bb (1≤b≤5⋅1051≤b≤5⋅105, since he does not like large numbers) and change the element aiai to bb. What is the maximum possible gcd value he can obtain?\nInput\n\nThe first line of the input contains a single integer NN.\nThe second line contains NN space-separated integers a1,a2,…,aNa1,a2,…,aN.\n\nOutput\nPrint a single line containing one integer ― the largest possible gcd value.\nConstraints\n\n1≤N≤5⋅1041≤N≤5⋅104\n1≤ai≤5⋅1051≤ai≤5⋅105 for each valid ii\n\nSubtasks\nSubtask #1 (15 points):\n\n1≤N≤1001≤N≤100\n1≤ai≤1001≤ai≤100 for each valid ii\n\nSubtask #2 (35 points):\n\n1≤N≤5⋅1041≤N≤5⋅104\n1≤ai≤5001≤ai≤500 for each valid ii\n\nSubtask #3 (50 points): original constraints\n\n                        Sample Input 1\n                        \n\n5\n4 5 10 3 7\n\n                        Sample Output 1\n                        \n\n9\n\nAuthor:\n6★allllekssssa\nEditorial:\nhttps://discuss.codechef.com/problems/GCDS\nTags:\n\n               \n                 Number Theory, Branch and Bound, Two pointers, Prefix Sum\n                 \n                     \n                     Mathematics, Algorithms, Complete Search, Simple Algos\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\n2945\nDate Added:\n29-03-2019\nTime Limit:\n1.2 secs\nSource Limit:\n50000 Bytes\nLanguages:\nPYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit", '\n\nThere are n trees on a road in Chef\'s garden. Each tree has one of the three colours out of red, green or blue. You are given information about the colours of the trees by a string s. if s[i] is \'R\', it means that ith tree is red. Similarly \'G\' denotes green and \'B\' denotes blue colored tree.\n\nChef likes to create a beautiful pattern out of the tree colours. A pattern is called beautiful if all the trees of the same colour are continuous. eg. "RRBGG" and "GGBBB" are beautiful patterns, but "RGRB" is not a beautiful pattern because trees of red color are not continuous.\nFor achieving beautiful pattern, chef is permitted to change the colours of the trees. For changing the colour of ith tree from any colour to any other colour, he needs to pay a cost of c[i] rupees. Find out the minimum amount of rupees the chef requires, to create a beautiful pattern out of the colours of the n trees.\n\nInput\n\nFirst line of the input contains a single integer T denoting number of test cases. \nDescription of T test cases follows.\nFirst line of each test case will contain a single integer n denoting number of trees on the road in chef\'s garden.\nSecond line will contain a single line containing string s as defined in the problem. \nThird line will contain n space separated integers denoting the array c, i.e. c[1], c[2], .., c[n].\n\nOutput\n\nFor each test case, print a single line containing a single integer denoting minimum amount of rupees needed to create a beautiful pattern. \n\nConstraints\n\n1 ≤ T, n ≤ 105\n1 ≤ c[i] ≤ 109\n Sum of n over all the test cases won\'t exceed 106 \n\nExample\nInput:\n3\n3\nRGB\n1 2 3\n3\nRRR\n1 2 3\n3\nRBR\n1 2 3\n\nOutput:\n0\n0\n1\nExplanation\nExample case 1. Pattern is already beautiful. There is no need to pay any cost.\nExample case 2. Pattern is already beautiful. There is no need to pay any cost.\nExample case 3. Change colour of the first tree to blue. Then the pattern will BBR, which is beautiful pattern. Cost required will be 1. There is no way to create a beautiful pattern by paying less than 1 rupee. Hence answer is 1.\n\nAuthor:\nadmin2\nTags:\n\n               \n                 admin2, dynamic-programming, hump2015, minimum, prefix-sum\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\nN/A\nDate Added:\n27-02-2015\nTime Limit:\n3 secs\nSource Limit:\n50000 Bytes\nLanguages:\nJAVA, C, PYP3\n\nSubmit', '\nRead problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.\nIn Chefland, there are MM types of cookies, numbered 11 through MM. There is an infinite supply of cookies of each type. \nEach morning, the Master Chef of Chefland prepares a menu — a sequence of cookies. There may be multiple cookies with identical types in a menu. Two menus are considered different if the total number of cookies in one menu is different from their total number in the other menu or there is a valid index xx such that the type of the xx-th cookie in one menu is different from the type of the xx-th cookie in the other menu. For example, menus (1,2,1)(1,2,1), (1,2,1,2)(1,2,1,2) are different, and (1,1,2,3)(1,1,2,3), (1,2,1,3)(1,2,1,3) are also different.\nTo make things interesting, each morning, Master Chef receives three integers LL, RR and KK. To prepare a menu on that morning, he may use a cookie of type xx only if L≤x≤RL≤x≤R and he may not use more than KK cookies in total in this menu. For example, when L=3L=3, R=5R=5 and K=4K=4, then (5,4,3,5)(5,4,3,5) and (3,5,5)(3,5,5) are possible menus, while (5,4,3,5,4)(5,4,3,5,4) and (3,5,6)(3,5,6) are not.\nMoreover, a menu becomes special only if there is no integer x>1x>1 that divides the type of each cookie in the menu, i.e. a menu S=(s1,s2,…,sn)S=(s1,s2,…,sn) is special if gcd(s1,s2,…,sn)=1gcd(s1,s2,…,sn)=1.\nYou should process QQ queries. In each query, you are given the parameters LL, RR and KK for one morning. Master Chef wonders how many different special menus are possible. Can you help him calculate the number of possible special menus on each morning modulo 230230?\nInput\n\nThe first line of the input contains two space-separated integers MM and QQ.\nEach of the next QQ lines contains three space-separated integers LL, RR and KK describing a query.\n\nOutput\nFor each query, print a single line containing one integer — the number of possible special menus modulo 230230.\nConstraints\n\n1≤M≤1051≤M≤105\n1≤Q≤10,0001≤Q≤10,000\n1≤L≤R≤M1≤L≤R≤M\n1≤K≤1091≤K≤109\n                        Sample Input 1\n                        \n\n5 3\n3 4 3\n2 2 7\n3 5 7\n\n                        Sample Output 1\n                        \n\n8   \n0   \n3258\nExplanation\nThe eight possible menus for the first morning (first query) are (3,4)(3,4), (4,3)(4,3), (3,3,4)(3,3,4), (3,4,3)(3,4,3), (3,4,4)(3,4,4), (4,3,4)(4,3,4), (4,3,3)(4,3,3), (4,4,3)(4,4,3).\n\nAuthor:\n6★imanik\nEditorial:\nhttps://discuss.codechef.com/problems/MGICMENU\nTags:\n\n               \n                 Inclusion Exclusion Principle, Divide and Conquer, Prefix Sum, Mobius Inversion\n                 \n                     \n                     Mathematics, Number Theory, Set Theory, Algorithms, Recursion, Simple Algos\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\n2904\nDate Added:\n12-07-2019\nTime Limit:\n3 secs\nSource Limit:\n50000 Bytes\nLanguages:\nPYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit', '\n“We\'ve all got both light and dark inside us. What matters is the part we choose to act on. That\'s who we really are.” \nDumbledore\'s Army arrived at "12 Grimmauld Place". But to enter this house they need to give a password. Dumbledore didn\'t want any death eater to his secret place thus he made finding the password tricky. You and Harry want to enter the headquarters. Help Harry to find the password.\nFor a given  number nn, the password is an array of 1+n∗(n−1)21+n∗(n−1)2 numbers. The value at ithith index (0<=i<=n∗(n−1)20<=i<=n∗(n−1)2) in password array is count of permutations of first nn natural numbers such that inversion count of the permutation is ii. Since the values in password array can be very large, you need to provide the password array with values  MODMOD 104+7104+7.\nAn inversion in a permutation pp is a pair of indices (i,\u2009j)(i,\u2009j) such that i\u2009>\u2009ji\u2009>\u2009j and pi\u2009<\u2009pjpi\u2009<\u2009pj.\nFor example, a permutation (4,\u20091,\u20093,\u20092) contains 4 inversions by considering the indices (assuming 1-based indexing): (2,\u20091), (3,\u20091), (4,\u20091), (4,\u20093).\nHelp Harry before Death Eaters enter the headquarters.\nInput\n\nThe first line of the input contains a single integer TT denoting the number of test cases. The description of T test cases follows.\nThe next line contains TT space-separated integers, each of which denotes NN for the ithith test case. Here NN denotes the length of the array for which the password has to be calculated.  \n\nOutput\n\nFor each test case, print all the 1+n∗(n−1)21+n∗(n−1)2 elements, separated by space, of the password array.  \n\nConstraints:\n\n1≤T≤501≤T≤50\n1≤N≤5001≤N≤500\n\nSample Input\n3\n1 3 5\nSample output\n1\n1 2 2 1\n1 4 9 15 20 22 20 15 9 4 1\nExplanation\nFor test case 1 - \nThe permutations are \n\n1 ( 0 inversions)\n\nFor test case 2 - \nThe permutations are \n\n1 2 3 (0 inversions)\n2 1 3 (1 inversions)\n1 3 2 (1 inversions)\n3 1 2 (2 inversions)\n2 3 1 (2 inversions)\n3 2 1 (3 inversions)\n\n\nAuthor:\n5★vikas_nitd\nEditorial:\nhttps://discuss.codechef.com/problems/ALORA5\nTags:\n\n               \n                 alohomora, mahonian-numbers, prefix-sum, recursion, vikas_nitd\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\nN/A\nDate Added:\n7-01-2019\nTime Limit:\n1 secs\nSource Limit:\n50000 Bytes\nLanguages:\nPYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit', "\nNot all classes can be interesting. Some are too boring, and in case of offline classes, it's not always possible to run away too. On one such class, Vaibhav and Atul got too bored and so, they decided to play a game.\nAtul gave Vaibhav an integer array AA of length NN, and two more integers KK and LL. He asked Vaibhav to form KK new arrays of LL length from the array AA, such that the sum of all integers present in the new KK arrays combined should be as maximum as possible. Each new array should be a subarray of array AA and any element of array AA can be part of at most one new array. \nAs the size of array AA can be large, Vaibhav needs your help in the calculation. Help Vaibhav to solve the problem.\nInput Format\n\nFirst line will contain TT, number of testcases. Each test case contains 22 lines.\nFirst line of each test case contains 33 integers NN, KK and LL, as described in the question.\nSecond line contains N space separated integers A1,A2,...,ANA1,A2,...,AN.\n\nOutput Format\nFor each test case, output the maximum possible sum. If it is not possible to form KK arrays of size LL from array AA, output −1−1.\nConstraints\n\n1≤T≤1041≤T≤104\n1≤N≤1041≤N≤104\n1≤K≤1021≤K≤102\n1≤L≤1031≤L≤103\n1≤A1,A2,...,AN≤1091≤A1,A2,...,AN≤109\nSum of N∗KN∗K over all test case doesn't exceed 106106\n                        Sample Input 1\n                        \n\n2\n10 3 4\n1 2 3 4 5 6 7 8 9 10\n10 2 3\n1 2 3 4 5 6 7 8 9 10\n\n                        Sample Output 1\n                        \n\n-1\n45\nExplanation\nIn test case 1, no possible solution is there.\nIn test case 2, the best possible solution is to pick subarrays {{5,6,7},{8,9,10}}.\n\nAuthor:\n5★vaibhav_0318\nTester:\n5★zombiedub\nEditorial:\nhttps://discuss.codechef.com/problems/BCLGSUB\nTags:\n\n               \n                 dynamic-programming, prefix-sum, vaibhav_0318\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\nN/A\nDate Added:\n26-02-2022\nTime Limit:\n1 secs\nSource Limit:\n50000 Bytes\nLanguages:\nCPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit", "\nChef is eager to celebrate diwali. But he is assigned the task to distribute sweets to his neighbours. Consider Chef's neighbour live on a number line starting from 1. Chef doesn't like some of his neighbours. More specifically, he has NN neighbours which he doesn't like, given by A1,A2,...ANA1,A2,...AN.\nChef decides that he will exclude these neighbours while distrubing sweets. As it is tedious task, he decides that he will deliver sweets to kk-th nearest neighbours. You are given QQ queries, each query contains a number positive number K, help Chef to determine the kk-th nearest neighbour.   \nInput Format\n\nThe first line of each test case contains two space-separated integers NN,QQ, number of integers, number of queries.\nThe second line contains NN space-separated integers A1,A2,...,ANA1,A2,...,AN.\nThen Q lines follows containing a single integer K in each line.\n\nOutput Format\nPrint Q lines. The i-th line should contain the response to the i-th query.\nConstraints\n\n1≤N,Q≤1051≤N,Q≤105\n1≤A1<A2<...<AN≤1091≤A1<A2<...<AN≤109\n1≤Ki≤10181≤Ki≤1018\nAll values in input are integers\n                        Sample Input 1\n                        \n\n4 3\n3 5 6 7\n2\n5\n3\n\n                        Sample Output 1\n                        \n\n2\n9\n4\nExplanation\nThe positive integers that differ from all of A1,A2,...ANA1,A2,...AN are 1,2,4,8,9,10,11,… in ascending order. The second, fifth, and third smallest of them are 2, 9, and 4, respectively.\n\nAuthor:\n5★bindalcode\nEditorial:\nhttps://discuss.codechef.com/problems/GDINT\nTags:\n\n               \n                 bindalcode, prefix-sum\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\nN/A\nDate Added:\n26-10-2021\nTime Limit:\n1 secs\nSource Limit:\n50000 Bytes\nLanguages:\nCPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit", "\nNot all classes can be interesting. Some are too boring, and in case of offline classes, it's not always possible to run away too. On another such class, Vaibhav and Atul got too bored and so, they decided to play the same game, but with a twist.\nAtul gave Vaibhav an integer array AA of length NN, and three more integers KK, LL and CC. He asked Vaibhav to form KK new arrays of LL length from the array AA, such that the sum of all integers present in the new KK arrays combined should be as maximum as possible. Each new array should be a subarray of array AA and any element of array AA can be part of at most two new arrays. In total, there can be at most CC elements which are part of more than one new array.\nAs the size of array AA can be large, Vaibhav needs your help in the calculation. Help Vaibhav to solve the problem.\nInput Format\n\nFirst line will contain TT, number of testcases. Then the testcases follow.\nEach testcase contains two lines of input, first line contains 4 integers N,K,L,CN,K,L,C, as described in the question.\nSecond line contains NN space-separated integers A1,A2,A3,...,ANA1,A2,A3,...,AN.\n\nOutput Format\nFor each test case, output the maximum possible sum. If it is not possible to form KK arrays of size LL from array AA, output −1−1.\nConstraints\n\n1≤T≤1041≤T≤104\n1≤N≤1041≤N≤104\n1≤K,L≤1021≤K,L≤102\n0≤C≤1020≤C≤102\nC≤LC≤L\n1≤A1,A2,...,AN≤1091≤A1,A2,...,AN≤109\nSum of N∗K∗CN∗K∗C for all test cases does not exceed 107107\n                        Sample Input 1\n                        \n\n3\n5 3 2 1\n2 7 6 4 1\n10 4 2 0\n1 2 3 2 5 3 2 5 3 3\n3 1 4 1\n1 2 3\n\n                        Sample Output 1\n                        \n\n27\n26\n-1\nExplanation\nIn the first test case, the best way to choose is to choose indices {{1,2},{2,3},{4,5}}.\nIn the third test case, there is no way to choose required subarrays.\n\nAuthor:\n5★vaibhav_0318\nTester:\n5★zombiedub\nEditorial:\nhttps://discuss.codechef.com/problems/BCLGSUBH\nTags:\n\n               \n                 dynamic-programming, prefix-sum, vaibhav_0318\n                 \n               \n             \n             \n\n                        Difficulty Rating:\n                    \n\nN/A\nDate Added:\n27-02-2022\nTime Limit:\n1 secs\nSource Limit:\n50000 Bytes\nLanguages:\nCPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM\n\nSubmit", 'The Lead Game - TLG', 'Little Elephant and Candies - LECANDY']
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
+
+Tree Expectancy - EXPTREE
+https://www.codechef.com/problems/EXPTREE
+
+Max sum Min sum - DYNMCPRG
+https://www.codechef.com/problems/DYNMCPRG
+
+Prime Graph - PRIMEGRAPH
+https://www.codechef.com/problems/PRIMEGRAPH
+
+Root the Tree - ROOTTREE
+https://www.codechef.com/problems/ROOTTREE
+
+Animesh does not gift Malvika on her birthday - CHN10
+https://www.codechef.com/problems/CHN10
+
+Graph Count - GRCNT
+https://www.codechef.com/problems/GRCNT
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Devu and a light discussion - DEVLDISC
+https://www.codechef.com/problems/DEVLDISC
+
+Chef and Pie - CHXORR
+https://www.codechef.com/problems/CHXORR
+
+Processing a string - KOL15A
+https://www.codechef.com/problems/KOL15A
 

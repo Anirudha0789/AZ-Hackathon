@@ -1,0 +1,50 @@
+
+          
+            Complete the function void reload (int *x, int *y) accepting two arguments, which will find sum of them, and with absolute difference of them.
+
+Sample Input:- 
+
+4
+5
+
+Sample output:-
+
+9
+1
+            
+            
+            
+            
+            
+        
+
+        
+Author(s):
+
+2★sarcasticpavan
+
+Editorial:
+https://discuss.codechef.com/problems/SSEC0001
+Tags:
+
+               
+                 c, c-plus-plus, codechef, easy, sarcasticpavan, ssec2020
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+9-08-2020
+Time Limit:
+1 - 3 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, PYPY, PHP, JS
+
+Submit

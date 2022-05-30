@@ -1,0 +1,74 @@
+
+Read problems statements in Russian, Vietnamese, Hindi, Mandarin chinese and Bengali as well.
+You are given an integer sequence A1,A2,…,ANA1,A2,…,AN.
+Let's define a transformation ff. Applying ff on AA gives a new sequence f(A)=[B1,B2,…,BN]f(A)=[B1,B2,…,BN], where BN=ANBN=AN and Bi=Ai⊕Ai+1Bi=Ai⊕Ai+1 for each valid ii.
+Next, let's denote the sequence obtained by starting with AA and applying the transformation kk times by fk(A)fk(A). Formally, f0(A)=Af0(A)=A and fk+1(A)=f(fk(A))fk+1(A)=f(fk(A)) for any integer k≥0k≥0.
+You should answer QQ queries. In each query, you are given two integers KK and XX; the answer to this query is fK(A)XfK(A)X, i.e. the XX-th element of the sequence fK(A)fK(A).
+Input
+
+The first line of the input contains two space-separated integers NN and QQ.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+Each of the next QQ lines contains two space-separated integers KK and XX describing one query.
+
+Output
+For each query, print a single line containing one integer — the answer to this query.
+Constraints
+
+1≤N,Q≤2⋅1051≤N,Q≤2⋅105 
+0≤Ai≤1090≤Ai≤109 for all valid ii 
+0≤K≤1090≤K≤109
+1≤X≤N1≤X≤N 
+
+Example Input
+7 7
+1 7 5 2 27 48 11
+1 3
+2 4
+2 5
+2 7
+3 1
+3 3
+10000 7
+
+Example Output
+7
+50
+16
+11
+1
+44
+11
+
+
+Author(s):
+
+7★bciobanu
+
+Editorial:
+https://discuss.codechef.com/problems/STRTF
+Tags:
+
+               
+                 Bitwise Operation
+                 
+                     
+                     Mathematics, Bit Manipulation
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-11-2018
+Time Limit:
+1.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,60 @@
+
+Chef has been given an array word consisting of N strings, he wants to return the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters. Which means the strings word[i] and word[j] contain no common characters.
+If no such two words exist in the given array, Chef should return 0.
+Input Format
+
+First line will contain TT, number of testcases. Then the testcases follow.
+Next line contains length of the array "N".
+The 2nd line of each test case contains the space separated words present in the array.
+
+Output Format
+For each testcase, output in an integer.
+Constraints
+
+1≤T≤10001≤T≤1000
+2≤N≤2≤N≤1000
+1≤words[i].length≤1≤words[i].length≤1000
+words[i] consists only of lowercase English letters.
+                        Sample Input 1
+                        
+
+1
+6
+abcw baz foo bar xtfn abcdef
+
+                        Sample Output 1
+                        
+
+16
+Explanation
+The two words can be "abcw", "xtfn", as they have no common characters in it. Therefore, the product of the length of both the strings = 4 * 4 = 16 is maximum among all possible pairs.
+
+Author(s):
+
+3★aniket_111
+
+Editorial:
+https://discuss.codechef.com/problems/WORDPRD
+Tags:
+
+               
+                 aniket_111, bitset, cpp, hashing, help
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+11-03-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

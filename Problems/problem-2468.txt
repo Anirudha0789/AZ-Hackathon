@@ -1,0 +1,77 @@
+
+
+Byteland is a kingdom with tree topology where there are total N cities numbered from 0 to N - 1. The capital city lies at the root of the tree and has number 0. Each edge in the tree represents an undirected road between two cities. We can assume that distance of each such edge is 1.
+In this paragraph, we describe the current transportation toll system. There is a toll booth at capital city. Also, King has defined some special cities, where a toll booth is present. Say a person arrives at a toll booth x, and say y is the last toll booth the person has visited. If dist(x, 0) < dist(y, 0), this person has to pay an amount equal to dist(x, y) i.e. the distance between current booth and the booth last visited by the person. If current booth is the first booth a person has visited today, they don't have to pay anything. Also, in the same day, for a pair of booths (x, y) you have pay toll at most once.
+
+King feels that current system is not generating enough profits and he wants to change the structure of the city. First, he defines a parameter P which is used for evaluating how good a structure is. King wants to observe the toll collection for the farthest cities from the capital i.e. leaves of the tree. He assigns to a single person the task of travelling from leaves of the tree to the capital city. This person decides to complete the task in a single day. He'll start from a leaf and visit the root using shortest path possible, come back to another leaf and visit the root using shortest path possible and so on for all the leaves. P is defined as the minimum toll to be paid to do this. 
+King has decided that he can change parent city of at most one city(except the capital city, which doesn't have any parent). After such modification the tree topology should be preserved and kingdom should remain connected. He wants to maximise the parameter P. Can you find the maximum possible value of P for him? Note that King can choose to not to make any changes.
+
+Input
+
+First line contains T, the number of test cases.
+Each test case consists of N in one line.
+Next line contains N - 1 integers, P1, P2, ..., PN - 1 where Pi denotes the parent of city number i.
+
+The third line contains N integers, S0, S1, ..., SN - 1 where Si is 1 if city number i is special, else Si is 0.
+
+Output
+
+For each test case output the required answer in one line.
+
+Constraints
+
+1 ≤ T ≤ 105
+1 ≤ N ≤ 105
+1 ≤ Sum of N for all test cases ≤ 106
+
+Example
+Input:
+1
+3
+0 0
+1 1 0
+
+Output:
+2
+
+Explanation
+
+Lets find P for current city first.
+One possible way for a person to perform the task for finding P is to visit cities in the order 1, 0, 2, 0.
+When person arrives at city 0 for the first time, he has to pay a toll 1.
+When person arrives at city 0 again he doesn't have to pay anything.
+Hence, P = 1.
+If King changes parent of city 1 to city 2, then value of P is 2.
+
+Note:
+
+Large input files. Use scanf/print in C/C++.
+
+
+Author(s):
+
+blunderspride
+
+Tags:
+
+               
+                 blunderspride, depth-first-search, hard, ipc151b, trees
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+19-11-2015
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

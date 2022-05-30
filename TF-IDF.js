@@ -1,19 +1,29 @@
-var TfIdf = require('node-tfidf');
-var tfidf = new TfIdf();
-const fs = require('fs');
-const { stringify } = require('querystring');
-const { count } = require('console');
+const fs = require("fs-extra");
+const w2v = require("word2vec");
 
-var corpus = [];
-// var cnt = 0;
-// while(cnt < 1944)
-fs.readFile('./keyword.txt', (err, data)=>{
-    if(err) throw err;
-    corpus.join();
+function clearText(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^A-Za-zА-Яа-яЁёЇїІіҐґЄє0-9\-]|\s]/g, " ")
+      .replace(/\s{2,}/g, " ");
+}
+
+async function clear(filePath) {
+    const contentRaw = await fs.readFile(filePath);
+    const content = clearText(contentRaw.toString());
+    return fs.writeFile(`cleared_${filePath}`, content);
+}
+
+w2v.word2vec(corpusFilePath, "vectors.txt", { size: 300 }, () => {
+    console.log("DONE");
 });
 
-tfidf.addFileSync((corpus).toString());
- 
-tfidf.tfidfs('player', function(i, measure) {
-    console.log('document #' + i + ' is ' + measure);
+w2v.loadModel("vectors.txt", (error, model) => {
+    console.log("SIZE: ", model.size);
+    console.log("WORDS: ", model.words);
+    console.log(model.mostSimilar(word, 20));
 });
+
+w2v.loadModel("vectors.txt", (error, model) => {
+    console.log(model.analogy(word, pair, number_neighbors));
+  });

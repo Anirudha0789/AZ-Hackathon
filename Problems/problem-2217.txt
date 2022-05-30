@@ -1,0 +1,49 @@
+
+XYZ school has the following grading policy:
+If mark is less than or equal to 50, the student gets 'F',
+If mark is greater than 50, but less than or equal to 55, student gets a 'D',
+If mark is greater than 55, but less than or equal to 60, student gets a 'C',
+If mark is greater than 60, but less than or equal to 75, student gets a 'B',
+if mark is greater than 75, but less than or equal to 90, then student gets 'A',
+if mark is above 90, the student get the highest grade - 'A+'.
+Your task is to find the grade of a student as per the mark.
+Input:
+The line contains the mark, M
+Output:
+Output a single line containing the grade corresponding to the mark M.
+Constraints
+0≤ M ≤100
+Sample Input:
+80
+Sample Output:
+A
+
+Author(s):
+
+1★varghesebabu
+
+Editorial:
+https://discuss.codechef.com/problems/TNP402
+Tags:
+
+               
+                 c-plus-plus, easy, tnp42020, varghesebabu
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+17-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

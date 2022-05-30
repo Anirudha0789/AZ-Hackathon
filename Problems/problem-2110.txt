@@ -1,0 +1,60 @@
+
+Omi gave Ish a 22-DD matrix AA of size NN * NN and asked him to find a 11-DD matrix BB of size NN where A[i][j]A[i][j] represents the logical ANDAND of B[i]B[i] and B[j]B[j]. Omi is smart enough and he know that logical ANDAND of a number with itself is that number so he filled the primary diagonal of the matrix with −1−1. As there are many ways to form the matrix BB, so you have to find the minimum possible sum of elements of matrix BB from all the different possible ways.
+Input:
+
+The first line of input contains the integer NN, size of the matrix.
+Each of the following NN lines contains NN numbers AijAij , the elements of the matrix.
+
+Output:
+
+Output a single line integer, the minimum possible sum of elements of matrix BB.
+
+Constraints
+
+1≤N≤10001≤N≤1000
+0≤A[i][j]≤1090≤A[i][j]≤109
+Elements of matrix B must be non negative.
+
+Sample Input:
+ 5
+ -1 0 1 1 1
+ 0 -1 2 0 2
+ 1 2 -1 1 3
+ 1 0 1 -1 1
+ 1 2 3 1 -1
+
+Sample Output:
+ 10
+
+Explanation
+Matrix BB for which sum of the elements is minimum and satisfying the matrix AA : [1,2,3,1,3][1,2,3,1,3]
+
+Author(s):
+
+3★nitika_789
+
+Editorial:
+https://discuss.codechef.com/problems/OMYGAME
+Tags:
+
+               
+                 bitwise-operation, easy, lico2020, nitika_789
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+18-06-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

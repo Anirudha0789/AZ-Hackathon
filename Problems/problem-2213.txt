@@ -1,0 +1,78 @@
+
+TonyStarkTonyStark daughter MorganStarkMorganStark has been kidnapped by ThanosThanos. AvengersAvengers are trying to rescue her.The path to reach MorganMorgan is in the form of a tree having N nodes and each node has a value. The tree is rooted at 1. The nodes with prime value might have bombs. Hence AvengersAvengers wants to know how many nodes have prime value in the subtree of a certain node(including that node itself). The values of nodes can change while  travel. There is GrootGroot near the wall who tells which node is updated to what value.Help AvengersAvengers to rescue her if you can.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+For each of the test cases first line contains two space separated integers N and Q number of nodes in the tree and number of queries.
+Next line contain N space separated integers denoting the values of the node.
+Next N-1 line contains two integers A and B denoting there exists an edge between node A and B.
+Next Q lines contain two types of query:
+
+Type 1 : 1 A X - Replace value of node A by X.
+Type 2 : 2 A - Print number of primes in the sub tree of node A.
+Output:
+For each query of type 2 print the answer in a new line.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N,Q≤3000001≤N,Q≤300000
+−300000≤Value≤300000−300000≤Value≤300000
+
+Sample Input:
+    2
+    3 3
+    2 7 9
+    1 2
+    1 3
+    2 1
+    1 3 5
+    2 1
+    5 5
+    1 4 1 2 7 
+    4 2
+    5 3
+    1 3
+    5 4
+    1 1 2
+    2 2
+    1 3 5
+    2 3
+    2 1
+
+Sample Output:
+    2
+    3
+    0
+    3
+    4 
+
+
+Author(s):
+
+3★dcpandey
+
+Editorial:
+https://discuss.codechef.com/problems/AVVST
+Tags:
+
+               
+                 c-plus-plus, czen2020, data-structure, dcpandey, trees
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+15-09-2020
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit
